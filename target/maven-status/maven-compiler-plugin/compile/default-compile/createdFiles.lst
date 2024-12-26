@@ -1,0 +1,4 @@
+pageObjects\Dashboard_func_page.class
+pageObjects\Login_func_page.class
+baseClass\Common_functions.class
+extentReports\ExtentReportManager.class

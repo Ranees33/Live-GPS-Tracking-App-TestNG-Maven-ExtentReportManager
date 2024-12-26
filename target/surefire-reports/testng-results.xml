@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="13" passed="13" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-12-26T15:46:13 IST" name="VM Maps Suite" finished-at="2024-12-26T15:46:37 IST" duration-ms="24198">
+    <groups>
+      <group name="functional">
+        <method signature="Dashboard_func_test.test_dashboardfunc_profilenameverify(java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:testCases.Dashboard_func_test@12468a38]" name="test_dashboardfunc_profilenameverify" class="testCases.Dashboard_func_test"/>
+        <method signature="Dashboard_func_test.test_dashboard_livetrackingverify()[pri:4, instance:testCases.Dashboard_func_test@12468a38]" name="test_dashboard_livetrackingverify" class="testCases.Dashboard_func_test"/>
+      </group> <!-- functional -->
+      <group name="regression">
+        <method signature="Login_func_test.test_login_logoutfunc(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:testCases.Login_func_test@4a94ee4]" name="test_login_logoutfunc" class="testCases.Login_func_test"/>
+        <method signature="Login_func_test.test_loginfunc(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.Login_func_test@4a94ee4]" name="test_loginfunc" class="testCases.Login_func_test"/>
+      </group> <!-- regression -->
+      <group name="login">
+        <method signature="Login_func_test.test_login_logoutfunc(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:testCases.Login_func_test@4a94ee4]" name="test_login_logoutfunc" class="testCases.Login_func_test"/>
+        <method signature="Login_func_test.test_loginfunc(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.Login_func_test@4a94ee4]" name="test_loginfunc" class="testCases.Login_func_test"/>
+      </group> <!-- login -->
+      <group name="dashboard">
+        <method signature="Dashboard_func_test.test_dashboardfunc_profilenameverify(java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:testCases.Dashboard_func_test@12468a38]" name="test_dashboardfunc_profilenameverify" class="testCases.Dashboard_func_test"/>
+        <method signature="Dashboard_func_test.test_dashboard_livetrackingverify()[pri:4, instance:testCases.Dashboard_func_test@12468a38]" name="test_dashboard_livetrackingverify" class="testCases.Dashboard_func_test"/>
+      </group> <!-- dashboard -->
+    </groups>
+    <test started-at="2024-12-26T15:46:13 IST" name="Vm Trackers GPS Application Test" finished-at="2024-12-26T15:46:37 IST" duration-ms="24198">
+      <class name="testCases.Dashboard_func_test">
+        <test-method signature="test_dashboardfunc_profilenameverify(java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:testCases.Dashboard_func_test@12468a38]" started-at="2024-12-26T15:46:35 IST" name="test_dashboardfunc_profilenameverify" data-provider="logintestData1" depends-on-groups="login" finished-at="2024-12-26T15:46:36 IST" duration-ms="1395" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tonyboniee@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Ranees@12345]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Succuessfully LoggedIn]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_dashboardfunc_profilenameverify -->
+        <test-method signature="test_dashboard_livetrackingverify()[pri:4, instance:testCases.Dashboard_func_test@12468a38]" started-at="2024-12-26T15:46:36 IST" name="test_dashboard_livetrackingverify" depends-on-groups="login" finished-at="2024-12-26T15:46:37 IST" duration-ms="783" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_dashboard_livetrackingverify -->
+      </class> <!-- testCases.Dashboard_func_test -->
+      <class name="testCases.Login_func_test">
+        <test-method is-config="true" signature="setupSuite()[pri:0, instance:testCases.Login_func_test@4a94ee4]" started-at="2024-12-26T15:46:13 IST" name="setupSuite" finished-at="2024-12-26T15:46:13 IST" duration-ms="369" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupSuite -->
+        <test-method is-config="true" signature="launch_Browser()[pri:0, instance:testCases.Login_func_test@4a94ee4]" started-at="2024-12-26T15:46:13 IST" name="launch_Browser" finished-at="2024-12-26T15:46:22 IST" duration-ms="8699" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch_Browser -->
+        <test-method signature="test_login_logoutfunc(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:testCases.Login_func_test@4a94ee4]" started-at="2024-12-26T15:46:22 IST" name="test_login_logoutfunc" data-provider="logintestData1" finished-at="2024-12-26T15:46:25 IST" duration-ms="2954" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tonyboniee@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Ranees@12345]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Succuessfully LoggedIn]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_login_logoutfunc -->
+        <test-method signature="test_loginfunc(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.Login_func_test@4a94ee4]" started-at="2024-12-26T15:46:25 IST" name="test_loginfunc" data-provider="logintestData2" finished-at="2024-12-26T15:46:26 IST" duration-ms="1053" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tonyboniee@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Raneessu@123456]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[You have entered Invalid Password]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_loginfunc -->
+        <test-method signature="test_loginfunc(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.Login_func_test@4a94ee4]" started-at="2024-12-26T15:46:26 IST" name="test_loginfunc" data-provider="logintestData2" finished-at="2024-12-26T15:46:27 IST" duration-ms="896" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tonybonniee@gmail.abc]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Ranees@12345]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[User does not exists]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_loginfunc -->
+        <test-method signature="test_loginfunc(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.Login_func_test@4a94ee4]" started-at="2024-12-26T15:46:27 IST" name="test_loginfunc" data-provider="logintestData2" finished-at="2024-12-26T15:46:28 IST" duration-ms="880" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tonybonieaeu@gmaill.xyz]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Raneessn@123456]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[User does not exists]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_loginfunc -->
+        <test-method signature="test_loginfunc(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.Login_func_test@4a94ee4]" started-at="2024-12-26T15:46:28 IST" name="test_loginfunc" data-provider="logintestData2" finished-at="2024-12-26T15:46:29 IST" duration-ms="731" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tonyboniee@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Please Enter Password]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_loginfunc -->
+        <test-method signature="test_loginfunc(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.Login_func_test@4a94ee4]" started-at="2024-12-26T15:46:29 IST" name="test_loginfunc" data-provider="logintestData2" finished-at="2024-12-26T15:46:30 IST" duration-ms="805" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Ranees@12345]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Please Enter Valid Email]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_loginfunc -->
+        <test-method signature="test_loginfunc(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.Login_func_test@4a94ee4]" started-at="2024-12-26T15:46:30 IST" name="test_loginfunc" data-provider="logintestData2" finished-at="2024-12-26T15:46:30 IST" duration-ms="747" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Null]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Null]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Please Enter Valid Email]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_loginfunc -->
+        <test-method signature="test_loginfunc(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.Login_func_test@4a94ee4]" started-at="2024-12-26T15:46:30 IST" name="test_loginfunc" data-provider="logintestData2" finished-at="2024-12-26T15:46:31 IST" duration-ms="995" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TonyBoniee@Gmail.Com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Ranees@12345]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[User does not exists]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_loginfunc -->
+        <test-method signature="test_loginfunc(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.Login_func_test@4a94ee4]" started-at="2024-12-26T15:46:31 IST" name="test_loginfunc" data-provider="logintestData2" finished-at="2024-12-26T15:46:32 IST" duration-ms="1071" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[('tonyboniee@gmail.com'):]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Ranees: @'12345']]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Please Enter Valid Email]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_loginfunc -->
+        <test-method signature="test_loginfunc(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.Login_func_test@4a94ee4]" started-at="2024-12-26T15:46:32 IST" name="test_loginfunc" data-provider="logintestData2" finished-at="2024-12-26T15:46:34 IST" duration-ms="1106" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[<tonyboniee@gmail.com></>]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Ranees@12345]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Please Enter Valid Email]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_loginfunc -->
+        <test-method signature="test_loginfunc(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.Login_func_test@4a94ee4]" started-at="2024-12-26T15:46:34 IST" name="test_loginfunc" data-provider="logintestData2" finished-at="2024-12-26T15:46:35 IST" duration-ms="1238" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tonyboniee@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Rn@!@#$%]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[You have entered Invalid Password]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_loginfunc -->
+        <test-method is-config="true" signature="tear_Down()[pri:0, instance:testCases.Login_func_test@4a94ee4]" started-at="2024-12-26T15:46:37 IST" name="tear_Down" finished-at="2024-12-26T15:46:37 IST" duration-ms="434" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tear_Down -->
+        <test-method is-config="true" signature="teardownSuite()[pri:0, instance:testCases.Login_func_test@4a94ee4]" started-at="2024-12-26T15:46:38 IST" name="teardownSuite" finished-at="2024-12-26T15:46:38 IST" duration-ms="542" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownSuite -->
+      </class> <!-- testCases.Login_func_test -->
+    </test> <!-- Vm Trackers GPS Application Test -->
+  </suite> <!-- VM Maps Suite -->
+</testng-results>

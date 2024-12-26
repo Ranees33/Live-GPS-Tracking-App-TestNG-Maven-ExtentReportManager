@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [VM Maps Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="classes" name="Vm Trackers GPS Application Test(failed)">
+    <classes>
+      <class name="testCases.Dashboard_func_test">
+        <methods>
+          <include name="tear_Down"/>
+          <include name="teardownSuite"/>
+          <include name="test_dashboardfunc_profilenameverify"/>
+          <include name="setupSuite"/>
+          <include name="test_dashboard_livetrackingverify"/>
+          <include name="launch_Browser"/>
+        </methods>
+      </class> <!-- testCases.Dashboard_func_test -->
+      <class name="testCases.Login_func_test">
+        <methods>
+          <include name="tear_Down"/>
+          <include name="teardownSuite"/>
+          <include name="test_login_logoutfunc" invocation-numbers="0"/>
+          <include name="setupSuite"/>
+          <include name="launch_Browser"/>
+        </methods>
+      </class> <!-- testCases.Login_func_test -->
+    </classes>
+  </test> <!-- Vm Trackers GPS Application Test(failed) -->
+</suite> <!-- Failed suite [VM Maps Suite] -->

@@ -1,0 +1,281 @@
+<html>
+<head>
+<title>TestNG:  Vm Trackers GPS Application Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Vm Trackers GPS Application Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>10/1/2</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Dec 26 12:47:07 IST 2024</td>
+</tr>
+<tr><td>Total time:</td><td>31 seconds (31321 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testCases.Login_func_test.test_login_logoutfunc()'><b>test_login_logoutfunc</b><br>Test class: testCases.Login_func_test<br>Parameters: tonyboniee@gmail.com, Ranees@12345, Succuessfully LoggedIn</td>
+<td><div><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.140)
+Build info: version: &apos;4.26.0&apos;, revision: &apos;8ccf0219d7&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [aaf830313a5adc98288f4b5a41911fd9, findElement {using=xpath, value=(//*[text()=&apos;arkranees&apos;])[2]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.140, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\Ranees\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55059}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55059/devtoo..., se:cdpVersion: 131.0.6778.140, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: aaf830313a5adc98288f4b5a41911fd9
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.toString(Unknown Source)
+	at java.base/java.lang.String.valueOf(String.java:4222)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.toString(ExpectedConditions.java:669)
+	at java.base/java.lang.String.valueOf(String.java:4222)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:225)
+	at testCases.Login_func_test.test_login_logoutfunc(Login_func_test.java:73)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1774293261", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1774293261'><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.140)
+Build info: version: &apos;4.26.0&apos;, revision: &apos;8ccf0219d7&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [aaf830313a5adc98288f4b5a41911fd9, findElement {using=xpath, value=(//*[text()=&apos;arkranees&apos;])[2]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.140, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\Ranees\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55059}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55059/devtoo..., se:cdpVersion: 131.0.6778.140, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: aaf830313a5adc98288f4b5a41911fd9
+	at jdk.internal.reflect.GeneratedConstructorAccessor12.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy17.toString(Unknown Source)
+	at java.base/java.lang.String.valueOf(String.java:4222)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.toString(ExpectedConditions.java:669)
+	at java.base/java.lang.String.valueOf(String.java:4222)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:225)
+	at testCases.Login_func_test.test_login_logoutfunc(Login_func_test.java:73)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+</pre></div></td>
+<td>22</td>
+<td>testCases.Login_func_test@4b2bac3f</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testCases.Login_func_test.test_loginfunc()'><b>test_loginfunc</b><br>Test class: testCases.Login_func_test<br>Parameters: ('tonyboniee@gmail.com'):, Ranees: @'12345', Please Enter Valid Email</td>
+<td></td>
+<td>0</td>
+<td>testCases.Login_func_test@4b2bac3f</td></tr>
+<tr>
+<td title='testCases.Login_func_test.test_loginfunc()'><b>test_loginfunc</b><br>Test class: testCases.Login_func_test<br>Parameters: tonyboniee@gmail.com, Raneessu@123456, You have entered Invalid Password</td>
+<td></td>
+<td>0</td>
+<td>testCases.Login_func_test@4b2bac3f</td></tr>
+<tr>
+<td title='testCases.Login_func_test.test_loginfunc()'><b>test_loginfunc</b><br>Test class: testCases.Login_func_test<br>Parameters: <tonyboniee@gmail.com></>, Ranees@12345, Please Enter Valid Email</td>
+<td></td>
+<td>0</td>
+<td>testCases.Login_func_test@4b2bac3f</td></tr>
+<tr>
+<td title='testCases.Login_func_test.test_loginfunc()'><b>test_loginfunc</b><br>Test class: testCases.Login_func_test<br>Parameters: tonyboniee@gmail.com, , Please Enter Password</td>
+<td></td>
+<td>0</td>
+<td>testCases.Login_func_test@4b2bac3f</td></tr>
+<tr>
+<td title='testCases.Login_func_test.test_loginfunc()'><b>test_loginfunc</b><br>Test class: testCases.Login_func_test<br>Parameters: TonyBoniee@Gmail.Com, Ranees@12345, User does not exists</td>
+<td></td>
+<td>0</td>
+<td>testCases.Login_func_test@4b2bac3f</td></tr>
+<tr>
+<td title='testCases.Login_func_test.test_loginfunc()'><b>test_loginfunc</b><br>Test class: testCases.Login_func_test<br>Parameters: tonyboniee@gmail.com, Rn@!@#$%, You have entered Invalid Password</td>
+<td></td>
+<td>0</td>
+<td>testCases.Login_func_test@4b2bac3f</td></tr>
+<tr>
+<td title='testCases.Login_func_test.test_loginfunc()'><b>test_loginfunc</b><br>Test class: testCases.Login_func_test<br>Parameters: tonybonniee@gmail.abc, Ranees@12345, User does not exists</td>
+<td></td>
+<td>0</td>
+<td>testCases.Login_func_test@4b2bac3f</td></tr>
+<tr>
+<td title='testCases.Login_func_test.test_loginfunc()'><b>test_loginfunc</b><br>Test class: testCases.Login_func_test<br>Parameters: , Ranees@12345, Please Enter Valid Email</td>
+<td></td>
+<td>0</td>
+<td>testCases.Login_func_test@4b2bac3f</td></tr>
+<tr>
+<td title='testCases.Login_func_test.test_loginfunc()'><b>test_loginfunc</b><br>Test class: testCases.Login_func_test<br>Parameters: tonybonieaeu@gmaill.xyz, Raneessn@123456, User does not exists</td>
+<td></td>
+<td>0</td>
+<td>testCases.Login_func_test@4b2bac3f</td></tr>
+<tr>
+<td title='testCases.Login_func_test.test_loginfunc()'><b>test_loginfunc</b><br>Test class: testCases.Login_func_test<br>Parameters: Null, Null, Please Enter Valid Email</td>
+<td></td>
+<td>0</td>
+<td>testCases.Login_func_test@4b2bac3f</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testCases.Dashboard_func_test.test_dashboardfunc_profilenameverify()'><b>test_dashboardfunc_profilenameverify</b><br>Test class: testCases.Dashboard_func_test</td>
+<td><div><pre>java.lang.Throwable: Method Dashboard_func_test.test_dashboardfunc_profilenameverify(java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:testCases.Dashboard_func_test@40005471] depends on not successfully finished methods in group &quot;login&quot;
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+... Removed 4 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1692049561", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1692049561'><pre>java.lang.Throwable: Method Dashboard_func_test.test_dashboardfunc_profilenameverify(java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:testCases.Dashboard_func_test@40005471] depends on not successfully finished methods in group &quot;login&quot;
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+</pre></div></td>
+<td>0</td>
+<td>testCases.Dashboard_func_test@40005471</td></tr>
+<tr>
+<td title='testCases.Dashboard_func_test.test_dashboard_livetrackingverify()'><b>test_dashboard_livetrackingverify</b><br>Test class: testCases.Dashboard_func_test</td>
+<td><div><pre>java.lang.Throwable: Method Dashboard_func_test.test_dashboard_livetrackingverify()[pri:4, instance:testCases.Dashboard_func_test@40005471] depends on not successfully finished methods in group &quot;login&quot;
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+... Removed 4 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace796076637", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace796076637'><pre>java.lang.Throwable: Method Dashboard_func_test.test_dashboard_livetrackingverify()[pri:4, instance:testCases.Dashboard_func_test@40005471] depends on not successfully finished methods in group &quot;login&quot;
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+</pre></div></td>
+<td>0</td>
+<td>testCases.Dashboard_func_test@40005471</td></tr>
+</table><p>
+</body>
+</html>

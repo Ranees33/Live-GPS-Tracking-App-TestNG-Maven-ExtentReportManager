@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="13" passed="10" failed="1" skipped="2">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-12-26T12:47:07 IST" name="VM Maps Suite" finished-at="2024-12-26T12:47:38 IST" duration-ms="31321">
+    <groups>
+      <group name="functional">
+        <method signature="Dashboard_func_test.test_dashboardfunc_profilenameverify(java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:testCases.Dashboard_func_test@40005471]" name="test_dashboardfunc_profilenameverify" class="testCases.Dashboard_func_test"/>
+        <method signature="Dashboard_func_test.test_dashboard_livetrackingverify()[pri:4, instance:testCases.Dashboard_func_test@40005471]" name="test_dashboard_livetrackingverify" class="testCases.Dashboard_func_test"/>
+      </group> <!-- functional -->
+      <group name="regression">
+        <method signature="Login_func_test.test_login_logoutfunc(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:testCases.Login_func_test@4b2bac3f]" name="test_login_logoutfunc" class="testCases.Login_func_test"/>
+        <method signature="Login_func_test.test_loginfunc(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.Login_func_test@4b2bac3f]" name="test_loginfunc" class="testCases.Login_func_test"/>
+      </group> <!-- regression -->
+      <group name="login">
+        <method signature="Login_func_test.test_login_logoutfunc(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:testCases.Login_func_test@4b2bac3f]" name="test_login_logoutfunc" class="testCases.Login_func_test"/>
+        <method signature="Login_func_test.test_loginfunc(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.Login_func_test@4b2bac3f]" name="test_loginfunc" class="testCases.Login_func_test"/>
+      </group> <!-- login -->
+      <group name="dashboard">
+        <method signature="Dashboard_func_test.test_dashboardfunc_profilenameverify(java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:testCases.Dashboard_func_test@40005471]" name="test_dashboardfunc_profilenameverify" class="testCases.Dashboard_func_test"/>
+        <method signature="Dashboard_func_test.test_dashboard_livetrackingverify()[pri:4, instance:testCases.Dashboard_func_test@40005471]" name="test_dashboard_livetrackingverify" class="testCases.Dashboard_func_test"/>
+      </group> <!-- dashboard -->
+    </groups>
+    <test started-at="2024-12-26T12:47:07 IST" name="Vm Trackers GPS Application Test" finished-at="2024-12-26T12:47:38 IST" duration-ms="31321">
+      <class name="testCases.Dashboard_func_test">
+        <test-method signature="test_dashboardfunc_profilenameverify(java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:testCases.Dashboard_func_test@40005471]" started-at="2024-12-26T12:47:37 IST" name="test_dashboardfunc_profilenameverify" depends-on-groups="login" finished-at="2024-12-26T12:47:37 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method Dashboard_func_test.test_dashboardfunc_profilenameverify(java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:testCases.Dashboard_func_test@40005471] depends on not successfully finished methods in group "login"]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method Dashboard_func_test.test_dashboardfunc_profilenameverify(java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:testCases.Dashboard_func_test@40005471] depends on not successfully finished methods in group "login"
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:842)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_dashboardfunc_profilenameverify -->
+        <test-method signature="test_dashboard_livetrackingverify()[pri:4, instance:testCases.Dashboard_func_test@40005471]" started-at="2024-12-26T12:47:37 IST" name="test_dashboard_livetrackingverify" depends-on-groups="login" finished-at="2024-12-26T12:47:37 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method Dashboard_func_test.test_dashboard_livetrackingverify()[pri:4, instance:testCases.Dashboard_func_test@40005471] depends on not successfully finished methods in group "login"]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method Dashboard_func_test.test_dashboard_livetrackingverify()[pri:4, instance:testCases.Dashboard_func_test@40005471] depends on not successfully finished methods in group "login"
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:842)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_dashboard_livetrackingverify -->
+      </class> <!-- testCases.Dashboard_func_test -->
+      <class name="testCases.Login_func_test">
+        <test-method is-config="true" signature="setupSuite()[pri:0, instance:testCases.Login_func_test@4b2bac3f]" started-at="2024-12-26T12:47:06 IST" name="setupSuite" finished-at="2024-12-26T12:47:07 IST" duration-ms="498" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupSuite -->
+        <test-method is-config="true" signature="launch_Browser()[pri:0, instance:testCases.Login_func_test@4b2bac3f]" started-at="2024-12-26T12:47:07 IST" name="launch_Browser" finished-at="2024-12-26T12:47:15 IST" duration-ms="8109" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch_Browser -->
+        <test-method signature="test_login_logoutfunc(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:testCases.Login_func_test@4b2bac3f]" started-at="2024-12-26T12:47:15 IST" name="test_login_logoutfunc" data-provider="logintestData1" finished-at="2024-12-26T12:47:37 IST" duration-ms="22405" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tonyboniee@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Ranees@12345]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Succuessfully LoggedIn]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.140)
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [aaf830313a5adc98288f4b5a41911fd9, findElement {using=xpath, value=(//*[text()='arkranees'])[2]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.140, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\Ranees\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55059}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55059/devtoo..., se:cdpVersion: 131.0.6778.140, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: aaf830313a5adc98288f4b5a41911fd9]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.140)
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [aaf830313a5adc98288f4b5a41911fd9, findElement {using=xpath, value=(//*[text()='arkranees'])[2]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.140, chrome: {chromedriverVersion: 131.0.6778.204 (52183f9e99a..., userDataDir: C:\Users\Ranees\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55059}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55059/devtoo..., se:cdpVersion: 131.0.6778.140, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: aaf830313a5adc98288f4b5a41911fd9
+at jdk.internal.reflect.GeneratedConstructorAccessor12.newInstance(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy17.toString(Unknown Source)
+at java.base/java.lang.String.valueOf(String.java:4222)
+at org.openqa.selenium.support.ui.ExpectedConditions$23.toString(ExpectedConditions.java:669)
+at java.base/java.lang.String.valueOf(String.java:4222)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:225)
+at testCases.Login_func_test.test_login_logoutfunc(Login_func_test.java:73)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:842)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_login_logoutfunc -->
+        <test-method signature="test_loginfunc(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.Login_func_test@4b2bac3f]" started-at="2024-12-26T12:47:37 IST" name="test_loginfunc" data-provider="logintestData2" finished-at="2024-12-26T12:47:37 IST" duration-ms="11" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tonyboniee@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Raneessu@123456]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[You have entered Invalid Password]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_loginfunc -->
+        <test-method signature="test_loginfunc(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.Login_func_test@4b2bac3f]" started-at="2024-12-26T12:47:37 IST" name="test_loginfunc" data-provider="logintestData2" finished-at="2024-12-26T12:47:37 IST" duration-ms="8" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tonybonniee@gmail.abc]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Ranees@12345]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[User does not exists]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_loginfunc -->
+        <test-method signature="test_loginfunc(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.Login_func_test@4b2bac3f]" started-at="2024-12-26T12:47:37 IST" name="test_loginfunc" data-provider="logintestData2" finished-at="2024-12-26T12:47:37 IST" duration-ms="7" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tonybonieaeu@gmaill.xyz]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Raneessn@123456]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[User does not exists]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_loginfunc -->
+        <test-method signature="test_loginfunc(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.Login_func_test@4b2bac3f]" started-at="2024-12-26T12:47:37 IST" name="test_loginfunc" data-provider="logintestData2" finished-at="2024-12-26T12:47:37 IST" duration-ms="8" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tonyboniee@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Please Enter Password]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_loginfunc -->
+        <test-method signature="test_loginfunc(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.Login_func_test@4b2bac3f]" started-at="2024-12-26T12:47:37 IST" name="test_loginfunc" data-provider="logintestData2" finished-at="2024-12-26T12:47:37 IST" duration-ms="8" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Ranees@12345]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Please Enter Valid Email]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_loginfunc -->
+        <test-method signature="test_loginfunc(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.Login_func_test@4b2bac3f]" started-at="2024-12-26T12:47:37 IST" name="test_loginfunc" data-provider="logintestData2" finished-at="2024-12-26T12:47:37 IST" duration-ms="7" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Null]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Null]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Please Enter Valid Email]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_loginfunc -->
+        <test-method signature="test_loginfunc(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.Login_func_test@4b2bac3f]" started-at="2024-12-26T12:47:37 IST" name="test_loginfunc" data-provider="logintestData2" finished-at="2024-12-26T12:47:37 IST" duration-ms="8" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[TonyBoniee@Gmail.Com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Ranees@12345]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[User does not exists]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_loginfunc -->
+        <test-method signature="test_loginfunc(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.Login_func_test@4b2bac3f]" started-at="2024-12-26T12:47:37 IST" name="test_loginfunc" data-provider="logintestData2" finished-at="2024-12-26T12:47:37 IST" duration-ms="7" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[('tonyboniee@gmail.com'):]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Ranees: @'12345']]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Please Enter Valid Email]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_loginfunc -->
+        <test-method signature="test_loginfunc(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.Login_func_test@4b2bac3f]" started-at="2024-12-26T12:47:37 IST" name="test_loginfunc" data-provider="logintestData2" finished-at="2024-12-26T12:47:37 IST" duration-ms="7" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[<tonyboniee@gmail.com></>]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Ranees@12345]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Please Enter Valid Email]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_loginfunc -->
+        <test-method signature="test_loginfunc(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.Login_func_test@4b2bac3f]" started-at="2024-12-26T12:47:37 IST" name="test_loginfunc" data-provider="logintestData2" finished-at="2024-12-26T12:47:37 IST" duration-ms="7" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[tonyboniee@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Rn@!@#$%]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[You have entered Invalid Password]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_loginfunc -->
+        <test-method is-config="true" signature="tear_Down()[pri:0, instance:testCases.Login_func_test@4b2bac3f]" started-at="2024-12-26T12:47:37 IST" name="tear_Down" finished-at="2024-12-26T12:47:38 IST" duration-ms="375" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tear_Down -->
+        <test-method is-config="true" signature="teardownSuite()[pri:0, instance:testCases.Login_func_test@4b2bac3f]" started-at="2024-12-26T12:47:38 IST" name="teardownSuite" finished-at="2024-12-26T12:47:39 IST" duration-ms="862" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownSuite -->
+      </class> <!-- testCases.Login_func_test -->
+    </test> <!-- Vm Trackers GPS Application Test -->
+  </suite> <!-- VM Maps Suite -->
+</testng-results>
