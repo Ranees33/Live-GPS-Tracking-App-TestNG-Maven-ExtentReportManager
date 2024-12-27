@@ -9,13 +9,17 @@ public class ExtentReportManager {
 
 	public static ExtentReports extentReport;
 	public static ExtentSparkReporter sparkReporter;
-	public static ExtentTest test;
-	public static String testName = "";
-	public static String author = "";
-	public static String testCategory = "";
+//	public static ExtentTest test;
+//	public static String testName = "";
+//	public static String author = "";
+//	public static String testCategory = "";
+	
+    private static ThreadLocal<ExtentTest> test = new ThreadLocal<>();  // ThreadLocal for parallel test execution
 
 	// Initialize ExtentReports
 	public static void setupExtentReports() {
+		
+		System.out.println("Initializing ExtentReports...");  // Debug log
 
 		extentReport = new ExtentReports();
 		sparkReporter = new ExtentSparkReporter("Extent-Report/VMTrackersAppReport.html");
@@ -25,6 +29,8 @@ public class ExtentReportManager {
 
 		extentReport.setSystemInfo("Environment", "QA");
 		extentReport.setSystemInfo("Ranees", "Tester");
+		
+		System.out.println("ExtentReports initialized successfully."); // Debug log
 
 	}
 
@@ -34,14 +40,19 @@ public class ExtentReportManager {
 			extentReport.flush();
 		}
 	}
-	
 
-	// Create a scenario based test name
-//	public static void createTest() {
-//		test = extentReport.createTest(testName);
-//		test.assignAuthor(author);
-//		test.assignCategory(testCategory);
-//	
-//	}
+	// Create a new test entry in the report
+    public static void startTest(String testName, String author, String category) {
+        // Set the test information
+    	test.set(extentReport.createTest(testName));
+        test.get().assignAuthor(author);
+        test.get().assignCategory(category);
+        
+    }
+    
+    // Get the current test instance
+    public static ExtentTest getTest() {
+        return test.get();
+    }
 
 }
