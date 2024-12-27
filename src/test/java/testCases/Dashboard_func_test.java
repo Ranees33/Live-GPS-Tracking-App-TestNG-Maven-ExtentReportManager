@@ -21,9 +21,8 @@ public class Dashboard_func_test extends Common_functions {
 			retryAnalyzer = RetryAnalyzer.class)
 	public void test_dashboardfunc_profilenameverify(String eMail, String pWord, String expected) {
 		
-		test = ExtentReportManager.extentReport.createTest("Dashboard Page User Profile Name Validation");
-		test.assignAuthor("Ranees");
-		test.assignCategory("Functional Testing");
+		ExtentReportManager.startTest("Dashboard Page User Profile Name Validation", "Ranees", "Regression Testing");
+		test = ExtentReportManager.getTest();
 		
 		dashboard = new Dashboard_func_page(driver);
 		
@@ -52,9 +51,12 @@ public class Dashboard_func_test extends Common_functions {
 	@Test(priority = 4, groups = {"functional", "dashboard"}, dependsOnGroups = "login", retryAnalyzer = RetryAnalyzer.class)
 	public void test_dashboard_livetrackingverify() {
 		
-		test = ExtentReportManager.extentReport.createTest("Dashboard Live Tracking Status Visible Validation");
-		test.assignAuthor("Ranees");
-		test.assignCategory("Functional Testing");
+		// test = ExtentReportManager.extentReport.createTest("Dashboard Live Tracking Status Visible Validation");
+		// test.assignAuthor("Ranees");
+		// test.assignCategory("Functional Testing");
+		
+		ExtentReportManager.startTest("Dashboard Live Tracking Status Visible Validation", "Ranees", "Regression Testing");
+		test = ExtentReportManager.getTest();
 		
 		String expectedText = "No Devices Found";
 		dashboard.clicklivetrackingMenu.click();
@@ -66,7 +68,7 @@ public class Dashboard_func_test extends Common_functions {
 			test.pass("Live tracking status are equal: " + verifyliveTracking);
 		} else {
 			test.fail("Live tracking status are not equal: " + verifyliveTracking);
-//			Reporter.log("Live tracking status are not equal: " + verifyliveTracking);   // This reporter.log for testNG Report!
+			// Reporter.log("Live tracking status are not equal: " + verifyliveTracking);   // This reporter.log for testNG Report!
 
 		}
 
