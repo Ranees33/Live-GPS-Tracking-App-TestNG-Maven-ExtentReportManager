@@ -36,43 +36,53 @@ public class Login_func_test extends Common_functions {
 	@Test(priority = 1, groups = {"regression", "login"}, dataProvider = "logintestData1", dataProviderClass = Excel_data_code.class, 
 			retryAnalyzer = RetryAnalyzer.class)
 	public void test_login_logoutfunc(String eMail, String pWord, String expected_Result) {
-
-		test = ExtentReportManager.extentReport.createTest("Login Functionality Test Method initiated (Positive Scenarios)");
-		test.assignAuthor("Ranees");
-		test.assignCategory("Regression Testing");
 		
-		loginPage = new Login_func_page(driver);
-		wait = new WebDriverWait(driver, Duration.ofSeconds(20));
-		
-		// Perform login steps
-		test.info("Navigated to tracker.vmmaps.com");
-		driver.navigate().refresh();
-		loginPage.clickloginEle.click();
-		loginPage.enterEmailid.sendKeys(eMail);
-		loginPage.enterPsword.sendKeys(pWord);
-		test.info("Users enter the email and password with valid data");
-		loginPage.submitloginBtn.click();
-		test.info("User successfully logged in");
+		System.out.println("Starting the login functionality test...");  // Debug log
 
-//		 Verify the results using Hard assertions and try catch block!
+		ExtentReportManager.startTest("Login Functionality Test Method initiated (Positive Scenarios)", "Ranees", "Regression Testing");
+		test = ExtentReportManager.getTest();
+		
+		System.out.println("Login functionality test has started successfully..");  // Debug log
+		
 		try {
-			wait.until(ExpectedConditions
-					.presenceOfElementLocated(By.xpath("//*[contains(text(),'" + expected_Result + "')]")));
-			Assert.assertTrue(driver.getPageSource().contains(expected_Result));
-			test.pass("Expected Results found. Validation passed");
+			loginPage = new Login_func_page(driver);
+			wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+			
+			// Perform login steps
+			test.info("Navigated to tracker.vmmaps.com");
+			driver.navigate().refresh();
+			loginPage.clickloginEle.click();
+			loginPage.enterEmailid.sendKeys(eMail);
+			loginPage.enterPsword.sendKeys(pWord);
+			test.info("Users enter the email and password with valid data");
+			loginPage.submitloginBtn.click();
+			test.info("User successfully logged in");
 
+//			 Verify the results using Hard assertions and try catch block!
+			try {
+				wait.until(ExpectedConditions
+						.presenceOfElementLocated(By.xpath("//*[contains(text(),'" + expected_Result + "')]")));
+				Assert.assertTrue(driver.getPageSource().contains(expected_Result));
+				test.pass("Expected Results found. Validation passed");
+
+			} catch (Exception e) {
+				Assert.fail("Expected result '" + expected_Result + "' not found in page source");
+				System.out.println("Assertion Falied");
+				test.fail("Expected Results not found. Validation failed");
+
+			}
+
+			JavascriptExecutor scrolltoProfile = (JavascriptExecutor) driver;
+			scrolltoProfile.executeScript("arguments[0].click()",
+					wait.until(ExpectedConditions.elementToBeClickable(loginPage.clickuserProfile)));
+			loginPage.clicklogoutEle.click();
+			test.info("'Login' and 'Logout' Test Method Passed");
+			
 		} catch (Exception e) {
-			Assert.fail("Expected result '" + expected_Result + "' not found in page source");
-			System.out.println("Assertion Falied");
-			test.fail("Expected Results not found. Validation failed");
-
+			test.log(Status.FAIL, "Test failed due to: " + e.getMessage());
+		    e.printStackTrace();
 		}
-
-		JavascriptExecutor scrolltoProfile = (JavascriptExecutor) driver;
-		scrolltoProfile.executeScript("arguments[0].click()",
-				wait.until(ExpectedConditions.elementToBeClickable(loginPage.clickuserProfile)));
-		loginPage.clicklogoutEle.click();
-		test.info("'Login' and 'Logout' Test Method Passed");
+		
 		System.out.println("Test Login and Logout Function Method " + Thread.currentThread().getId());
 	}
 
@@ -81,9 +91,8 @@ public class Login_func_test extends Common_functions {
 			retryAnalyzer = RetryAnalyzer.class)
 	public void test_loginfunc(String eMail, String pWord, String expected_Result) {
 		
-		test = ExtentReportManager.extentReport.createTest("Login Functionality Test Method initiated (Negative Scenarios)");
-		test.assignAuthor("Ranees");
-		test.assignCategory("Regression Testing");
+		ExtentReportManager.startTest("Login Functionality Test Method initiated (Negative Scenarios)", "Ranees", "Regression Testing");
+		test = ExtentReportManager.getTest();
 		
 		loginPage = new Login_func_page(driver);
 		wait = new WebDriverWait(driver, Duration.ofSeconds(20));

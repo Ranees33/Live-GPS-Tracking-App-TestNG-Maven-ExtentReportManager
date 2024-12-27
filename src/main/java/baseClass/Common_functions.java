@@ -32,18 +32,15 @@ public class Common_functions {
 		return properties;
 	}
 	
-	@BeforeSuite
+	@BeforeSuite(alwaysRun = true)
     public void setupSuite() {
+		System.out.println("Starting before suite method.."); // Debug log
 		ExtentReportManager.setupExtentReports();
     }
 	
 
 	@BeforeTest
 	public void launch_Browser() throws IOException {
-		
-//		testName = "";   // Already has given in login func test class..
-//		author = "Ranees";
-//		testCategory = "Regression Testing";
 		
 		loadPropertyFile();
 		String browser = properties.getProperty("browser");
@@ -78,8 +75,9 @@ public class Common_functions {
 
 	}
 	
-	@AfterSuite
+	@AfterSuite(alwaysRun = true)
     public void teardownSuite() {
+		System.out.println("Reached after suite method.."); // Debug log
         ExtentReportManager.flushReport();
     }
 	
