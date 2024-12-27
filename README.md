@@ -14,7 +14,7 @@
 * Eclipse as the IDE.
 
 ### Configuration
-  The project uses a [*config.properties*](./src/test/resources/config.Properties) file to manage global configurations such as browser type and base url.
+  The project uses a [*config.properties*](.blob/main/config.Properties) file to manage global configurations such as browser type and base url.
   
 ## Page Objects: 
 Leverage the Page Object Model (POM) pattern to encapsulate web page elements and actions, promoting reusability and reducing code duplication.
