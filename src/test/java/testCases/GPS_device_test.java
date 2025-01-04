@@ -2,6 +2,9 @@ package testCases;
 
 import static org.testng.Assert.assertEquals;
 
+import java.util.List;
+
+import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.ExtentTest;
@@ -18,9 +21,9 @@ public class GPS_device_test extends Common_functions {
 	
 	@Test(priority = 1, groups = {"functional", "gpsdevice"}, dependsOnGroups = "dashboard", retryAnalyzer = RetryAnalyzer.class)
 	public void test_gpsdevicepage_elements() {
-		test = ExtentReportManager.extentReport.createTest("GPS Device Page Elements Visible Verification");
-		test.assignAuthor("Ranees");
-		test.assignCategory("Functional Testing");
+		
+		ExtentReportManager.startTest("GPS Device Page Elements Visible Verification", "Ranees", "Functional Testing");
+		test = ExtentReportManager.getTest();
 		
 		gpsdevice = new GPS_device_page(driver);
 		
@@ -41,6 +44,26 @@ public class GPS_device_test extends Common_functions {
 		test.log(Status.INFO, "GPS Device Page Elements Validation Test Passed");
 		System.out.println("Test GPS Device Page Elements Validation Method " + Thread.currentThread().getId());
 		
+	}
+	
+	@Test(priority = 2, groups = {"functional", "gpsdevice"}, dependsOnGroups = "dashboard", retryAnalyzer = RetryAnalyzer.class)
+	public void test_gpsdevicepage_printelementsInfo() {
+		ExtentReportManager.startTest("GPS Device Page Pop up Window Page Elements Info Validation", "Ranees", "Functional Testing");
+		test = ExtentReportManager.getTest();
+		
+		gpsdevice = new GPS_device_page(driver);
+		
+		// Navigate to the gps add device pop up page
+		test.info("Navigated to pop up window");
+		gpsdevice.clickaddeviceBtn.click();
+		test.info("Checking elements info on Add Device Pop Up Window and print it in console");
+		List<WebElement> elementsInfo = gpsdevice.printelementsInfo;
+		for (WebElement iterateElement : elementsInfo) {
+			System.out.println("Print Elements Info: " + iterateElement.getText());
+			
+		}
+		
+		System.out.println("Test GPS Device Page Elements Info Print Method " + Thread.currentThread().getId());
 	}
 
 }

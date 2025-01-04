@@ -21,7 +21,7 @@ public class Dashboard_func_test extends Common_functions {
 			retryAnalyzer = RetryAnalyzer.class)
 	public void test_dashboardfunc_profilenameverify(String eMail, String pWord, String expected) {
 		
-		ExtentReportManager.startTest("Dashboard Page User Profile Name Validation", "Ranees", "Regression Testing");
+		ExtentReportManager.startTest("Dashboard Page User Profile Name Validation", "Ranees", "Functional Testing");
 		test = ExtentReportManager.getTest();
 		
 		dashboard = new Dashboard_func_page(driver);
@@ -55,7 +55,7 @@ public class Dashboard_func_test extends Common_functions {
 		// test.assignAuthor("Ranees");
 		// test.assignCategory("Functional Testing");
 		
-		ExtentReportManager.startTest("Dashboard Live Tracking Status Visible Validation", "Ranees", "Regression Testing");
+		ExtentReportManager.startTest("Dashboard Live Tracking Status Visible Validation", "Ranees", "Functional Testing");
 		test = ExtentReportManager.getTest();
 		
 		String expectedText = "No Devices Found";

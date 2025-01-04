@@ -1,5 +1,7 @@
 package pageObjects;
 
+import java.util.List;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -17,5 +19,11 @@ public class GPS_device_page {
 	
 	@FindBy(id = "AddDeviceIconButton")
 	public WebElement visibleadd_devicebtnEle;
+	
+	@FindBy(id = "AddDeviceIconButton")
+	public WebElement clickaddeviceBtn;
+	
+	@FindBy(xpath = "//*[@class = 'Add-device-contaner'][1]")
+	public List<WebElement> printelementsInfo;
 
 }
