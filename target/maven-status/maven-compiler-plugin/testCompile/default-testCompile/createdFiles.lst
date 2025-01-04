@@ -1,5 +1,6 @@
 testCases\Abstract_class.class
 testCases\RetryAnalyzer.class
 testCases\Dashboard_func_test.class
+testCases\GPS_device_test.class
 testCases\Login_func_test.class
 testCases\Excel_data_code.class
