@@ -63,7 +63,8 @@ public class GPS_device_test extends Common_functions {
 			
 		}
 		
-		System.out.println("Test GPS Device Page Elements Info Print Method " + Thread.currentThread().getId());
+		test.log(Status.INFO, "GPS Add Device Pop Up Page Elements Info Validation Test Passed");
+		System.out.println("Test GPS Add Device Pop Up Page Elements Info Print Method " + Thread.currentThread().getId());
 	}
 
 }
