@@ -31,15 +31,22 @@ public class Login_func_test extends Common_functions {
 	Login_func_page loginPage;
 	WebDriverWait wait;
 	ExtentTest test;
-	
 
-	@Test(priority = 1, groups = {"regression", "login"}, dataProvider = "logintestData1", dataProviderClass = Excel_data_code.class, 
-			retryAnalyzer = RetryAnalyzer.class)
+	@Test(
+		    priority = 1, 
+			groups = {"regression", "login"}, 
+			dataProvider = "logintestData1", 
+			dataProviderClass = Excel_data_code.class, 
+			retryAnalyzer = RetryAnalyzer.class
+			)
 	public void test_login_logoutfunc(String eMail, String pWord, String expected_Result) {
 		
 		System.out.println("Starting the login functionality test...");  // Debug log
 
-		ExtentReportManager.startTest("Login Functionality Test Method initiated (Positive Scenarios)", "Ranees", "Regression Testing");
+		ExtentReportManager.startTest(
+				"Login Functionality Test Method initiated (Positive Scenarios)", 
+				"Ranees", 
+				"Regression Testing");
 		test = ExtentReportManager.getTest();
 		
 		System.out.println("Login functionality test has started successfully..");  // Debug log
@@ -48,30 +55,52 @@ public class Login_func_test extends Common_functions {
 			loginPage = new Login_func_page(driver);
 			wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 			
-			// Perform login steps
-			test.info("Navigated to tracker.vmmaps.com");
-			driver.navigate().refresh();
-			loginPage.clickloginEle.click();
-			loginPage.enterEmailid.sendKeys(eMail);
-			loginPage.enterPsword.sendKeys(pWord);
-			test.info("Users enter the email and password with valid data");
-			loginPage.submitloginBtn.click();
-			test.info("User successfully logged in");
+			performLogin(eMail, pWord);
+			verifyloginResult(expected_Result);
+			performLogout();
+			
+			test.info("'Login' and 'Logout' Test Method Passed");
+			
+		} catch (Exception e) {
+			test.log(Status.FAIL, "Test failed due to: " + e.getMessage());
+			e.printStackTrace();
+		}
+
+		System.out.println("Test Login and Logout Function Method " + Thread.currentThread().getId());
+	}
+	
+	// Perform login steps
+	private void performLogin(String eMail, String pWord) {
+		test.info("Navigated to tracker.vmmaps.com");
+		driver.navigate().refresh();
+		loginPage.clickloginEle.click();
+		loginPage.enterEmailid.sendKeys(eMail);
+		loginPage.enterPsword.sendKeys(pWord);
+		test.info("Users enter the email and password with valid data");
+		loginPage.submitloginBtn.click();
+		test.info("User successfully logged in");
+
+	}
 
 //			 Verify the results using Hard assertions and try catch block!
-			try {
-				wait.until(ExpectedConditions
-						.presenceOfElementLocated(By.xpath("//*[contains(text(),'" + expected_Result + "')]")));
-				Assert.assertTrue(driver.getPageSource().contains(expected_Result));
-				test.pass("Expected Results found. Validation passed");
+	private void verifyloginResult(String expected_Result) {
+		try {
+			wait.until(ExpectedConditions
+					.presenceOfElementLocated(By.xpath("//*[contains(text(),'" + expected_Result + "')]")));
+			Assert.assertTrue(driver.getPageSource().contains(expected_Result));
+			test.pass("Expected Results found. Validation passed");
 
-			} catch (Exception e) {
-				Assert.fail("Expected result '" + expected_Result + "' not found in page source");
-				System.out.println("Assertion Falied");
-				test.fail("Expected Results not found. Validation failed");
+		} catch (Exception e) {
+			Assert.fail("Expected result '" + expected_Result + "' not found in page source");
+			System.out.println("Assertion Falied");
+			test.fail("Expected Results not found. Validation failed");
 
-			}
+		}
+	}
 
+	// Perform Logout actions
+	private void performLogout() {
+		try {
 			JavascriptExecutor scrolltoProfile = (JavascriptExecutor) driver;
 			scrolltoProfile.executeScript("arguments[0].click()",
 					wait.until(ExpectedConditions.elementToBeClickable(loginPage.clickuserProfile)));
@@ -79,36 +108,63 @@ public class Login_func_test extends Common_functions {
 			test.info("'Login' and 'Logout' Test Method Passed");
 			
 		} catch (Exception e) {
-			test.log(Status.FAIL, "Test failed due to: " + e.getMessage());
-		    e.printStackTrace();
+			test.fail("Elements not clickable or logout action could not be performed");
+			throw e;
 		}
-		
-		System.out.println("Test Login and Logout Function Method " + Thread.currentThread().getId());
 	}
-
 	
-	@Test(priority = 2, groups = {"regression", "login"}, dataProvider = "logintestData2", dataProviderClass = Excel_data_code.class, 
-			retryAnalyzer = RetryAnalyzer.class)
+	
+	@Test(
+			priority = 2, 
+			groups = {"regression", "login"}, 
+			dataProvider = "logintestData2", 
+			dataProviderClass = Excel_data_code.class, 
+			retryAnalyzer = RetryAnalyzer.class
+			)
 	public void test_loginfunc(String eMail, String pWord, String expected_Result) {
 		
-		ExtentReportManager.startTest("Login Functionality Test Method initiated (Negative Scenarios)", "Ranees", "Regression Testing");
+		ExtentReportManager.startTest(
+				"Login Functionality Test Method initiated (Negative Scenarios)", 
+				"Ranees", 
+				"Regression Testing");
 		test = ExtentReportManager.getTest();
 		
-		loginPage = new Login_func_page(driver);
-		wait = new WebDriverWait(driver, Duration.ofSeconds(20));
-
 		try {
+			loginPage = new Login_func_page(driver);
+			wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+			
+			performLogin2(eMail, pWord);
+			verifyloginResults(expected_Result);
+			
+			test.log(Status.INFO, "All 'Login' Test Method with invalid test data are Passed");
+			
+		} catch (Exception e) {
+			test.log(Status.FAIL, "Test failed due to: " + e.getMessage());
+			e.printStackTrace();
+		}
+		
+		System.out.println("Test Login Function Method " + Thread.currentThread().getId());
+		
+	}
 
-			driver.navigate().refresh();
-			// Perform login steps
-			loginPage.enterEmailid.clear();
-			loginPage.enterEmailid.sendKeys(eMail);
-			loginPage.enterPsword.clear();
-			loginPage.enterPsword.sendKeys(pWord);
-			test.info("Users enter the email and password with invalid data");
-			loginPage.submitloginBtn.click();
-
-			// Verify the results using Hard assertions and try catch block!
+		private void performLogin2(String eMail, String pWord) {
+			try {
+				driver.navigate().refresh();
+				// Perform login steps
+				loginPage.enterEmailid.clear();
+				loginPage.enterEmailid.sendKeys(eMail);
+				loginPage.enterPsword.clear();
+				loginPage.enterPsword.sendKeys(pWord);
+				test.info("Users enter the email and password with invalid data");
+				loginPage.submitloginBtn.click();
+			} catch (Exception e) {
+				test.fail(e.getMessage());
+					
+				}
+		}
+	
+		// Verify the results using Hard assertions and try catch block!
+		private void verifyloginResults(String expected_Result) {
 			try {
 				wait.until(ExpectedConditions
 						.presenceOfElementLocated(By.xpath("//*[contains(text(),'" + expected_Result + "')]")));
@@ -122,15 +178,5 @@ public class Login_func_test extends Common_functions {
 				test.fail("Expected Results not found. Validation failed");
 
 			}
-			
-			test.log(Status.INFO, "All 'Login' Test Method with invalid test data are Passed");
-			
-		} catch (Exception e) {
-			test.log(Status.FAIL, "Test failed due to: " + e.getMessage());
-		    e.printStackTrace();
-			
 		}
-		System.out.println("Test Login Function Method " + Thread.currentThread().getId());
-
 	}
-}
