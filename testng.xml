@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="VM Maps Suite">
-	<test name="Vm Trackers GPS Application Test" parallel="classes"
-		thread-count="4">
-
-
+	
+	<listeners>
+        <listener class-name="testCases.Listener"/>
+    </listeners>
+	
+	<test name="Vm Trackers GPS Application Test" parallel="classes" thread-count="3">
 		<!-- <groups>
 			<run>
-				<include name="regression" />
 				<include name="functional" />
+				<exclude name="regression"></exclude>
 			</run>
 		</groups> -->
 
@@ -16,8 +18,8 @@
 			<class name="testCases.Login_func_test" />
 			<class name="testCases.Dashboard_func_test" />
 			<class name="testCases.GPS_device_test" />
+			<class name="testCases.Alert_func_test"/>
 		</classes>
 	</test>
 </suite>
 
-<!-- Test -->

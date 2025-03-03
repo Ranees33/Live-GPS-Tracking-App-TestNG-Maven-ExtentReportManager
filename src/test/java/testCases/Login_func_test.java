@@ -14,6 +14,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.ExtentReports;
@@ -24,7 +25,9 @@ import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import baseClass.Common_functions;
 import pageObjects.Login_func_page;
 import extentReports.ExtentReportManager;
+import testCases.Excel_data_code;
 
+@Listeners(Listener.class)
 public class Login_func_test extends Common_functions {
 
 	// Initialize the page object and base class for extent report
@@ -115,7 +118,7 @@ public class Login_func_test extends Common_functions {
 	
 	
 	@Test(
-			priority = 2, 
+			priority = 2,
 			groups = {"regression", "login"}, 
 			dataProvider = "logintestData2", 
 			dataProviderClass = Excel_data_code.class, 

@@ -3,6 +3,7 @@ package testCases;
 import org.openqa.selenium.Keys;
 import org.testng.Assert;
 import org.testng.Reporter;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.ExtentTest;
@@ -12,12 +13,18 @@ import baseClass.Common_functions;
 import extentReports.ExtentReportManager;
 import pageObjects.Dashboard_func_page;
 
+@Listeners(Listener.class)
 public class Dashboard_func_test extends Common_functions {
 	
 	Dashboard_func_page dashboard;
 	ExtentTest test;
 	
-	@Test(priority = 3, groups = {"functional", "dashboard"}, dependsOnGroups = "login", dataProvider = "logintestData1", dataProviderClass = Excel_data_code.class, 
+	@Test(
+			priority = 1, 
+			groups = {"functional", "dashboard"}, 
+			dependsOnGroups = "login", 
+			dataProvider = "logintestData1", 
+			dataProviderClass = Excel_data_code.class, 
 			retryAnalyzer = RetryAnalyzer.class)
 	public void test_dashboardfunc_profilenameverify(String eMail, String pWord, String expected) {
 		
@@ -48,7 +55,11 @@ public class Dashboard_func_test extends Common_functions {
 		System.out.println("Test Dashboard Profile Verify Method " + Thread.currentThread().getId());
 	}
 	
-	@Test(priority = 4, groups = {"functional", "dashboard"}, dependsOnGroups = "login", retryAnalyzer = RetryAnalyzer.class)
+	@Test(
+			priority = 2, 
+			groups = {"functional", "dashboard"}, 
+			dependsOnGroups = "login", 
+			retryAnalyzer = RetryAnalyzer.class)
 	public void test_dashboard_livetrackingverify() {
 		
 		// test = ExtentReportManager.extentReport.createTest("Dashboard Live Tracking Status Visible Validation");
@@ -60,7 +71,7 @@ public class Dashboard_func_test extends Common_functions {
 		
 		String expectedText = "No Devices Found";
 		dashboard.clicklivetrackingMenu.click();
-		test.info("Navigated to the tracking page");
+		test.info("Navigate to the tracking page");
 		String verifyliveTracking = dashboard.verifynodevicefoundText.getText();
 
 		// Use the condition in the if-else
@@ -73,7 +84,7 @@ public class Dashboard_func_test extends Common_functions {
 		}
 
 		// Alternatively, use assert that the status are no device found for live tracking
-		Assert.assertEquals(verifyliveTracking, expectedText);
+		Assert.assertEquals(verifyliveTracking, expectedText, "Actual text doesn't match the expected text!");
 		
 		test.log(Status.INFO, "Dashboard Page Live Tracking Status Verification Test Passed");
 		System.out.println("Test Dashboard Live Tracking Verify Method " + Thread.currentThread().getId());

@@ -5,6 +5,7 @@ import static org.testng.Assert.assertEquals;
 import java.util.List;
 
 import org.openqa.selenium.WebElement;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.ExtentTest;
@@ -14,12 +15,17 @@ import baseClass.Common_functions;
 import extentReports.ExtentReportManager;
 import pageObjects.GPS_device_page;
 
+@Listeners(Listener.class)
 public class GPS_device_test extends Common_functions {
 	
 	GPS_device_page gpsdevice;
 	ExtentTest test;
 	
-	@Test(priority = 1, groups = {"functional", "gpsdevice"}, dependsOnGroups = "dashboard", retryAnalyzer = RetryAnalyzer.class)
+	@Test(
+			priority = 1, 
+			groups = {"functional", "gpsdevice"}, 
+			dependsOnGroups = "dashboard", 
+			retryAnalyzer = RetryAnalyzer.class)
 	public void test_gpsdevicepage_elements() {
 		
 		ExtentReportManager.startTest("GPS Device Page Elements Visible Verification", "Ranees", "Functional Testing");
@@ -46,7 +52,11 @@ public class GPS_device_test extends Common_functions {
 		
 	}
 	
-	@Test(priority = 2, groups = {"functional", "gpsdevice"}, dependsOnGroups = "dashboard", retryAnalyzer = RetryAnalyzer.class)
+	@Test(
+			priority = 2, 
+			groups = {"functional", "gpsdevice"}, 
+			dependsOnGroups = "dashboard", 
+			retryAnalyzer = RetryAnalyzer.class)
 	public void test_gpsdevicepage_printelementsInfo() {
 		ExtentReportManager.startTest("GPS Device Page Pop up Window Page Elements Info Validation", "Ranees", "Functional Testing");
 		test = ExtentReportManager.getTest();
@@ -62,6 +72,7 @@ public class GPS_device_test extends Common_functions {
 			System.out.println("Print Elements Info: " + iterateElement.getText());
 			
 		}
+		gpsdevice.clickcancelBtn.click();
 		
 		test.log(Status.INFO, "GPS Add Device Pop Up Page Elements Info Validation Test Passed");
 		System.out.println("Test GPS Add Device Pop Up Page Elements Info Print Method " + Thread.currentThread().getId());

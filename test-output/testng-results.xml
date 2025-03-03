@@ -1,43 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="15" passed="15" failed="0" skipped="0">
+<testng-results ignored="0" total="17" passed="17" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-04T12:20:02 IST" name="Default suite" finished-at="2025-01-04T12:20:40 IST" duration-ms="38738">
+  <suite started-at="2025-03-02T22:55:45 IST" name="VM Maps Suite" finished-at="2025-03-02T22:56:17 IST" duration-ms="32115">
     <groups>
       <group name="functional">
-        <method signature="GPS_device_test.test_gpsdevicepage_elements()[pri:1, instance:testCases.GPS_device_test@2de23121]" name="test_gpsdevicepage_elements" class="testCases.GPS_device_test"/>
-        <method signature="GPS_device_test.test_gpsdevicepage_printelementsInfo()[pri:2, instance:testCases.GPS_device_test@2de23121]" name="test_gpsdevicepage_printelementsInfo" class="testCases.GPS_device_test"/>
-        <method signature="Dashboard_func_test.test_dashboardfunc_profilenameverify(java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:testCases.Dashboard_func_test@43c1b556]" name="test_dashboardfunc_profilenameverify" class="testCases.Dashboard_func_test"/>
-        <method signature="Dashboard_func_test.test_dashboard_livetrackingverify()[pri:4, instance:testCases.Dashboard_func_test@43c1b556]" name="test_dashboard_livetrackingverify" class="testCases.Dashboard_func_test"/>
+        <method signature="Dashboard_func_test.test_dashboardfunc_profilenameverify(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:testCases.Dashboard_func_test@fbd1f6]" name="test_dashboardfunc_profilenameverify" class="testCases.Dashboard_func_test"/>
+        <method signature="GPS_device_test.test_gpsdevicepage_elements()[pri:1, instance:testCases.GPS_device_test@1ce24091]" name="test_gpsdevicepage_elements" class="testCases.GPS_device_test"/>
+        <method signature="Dashboard_func_test.test_dashboard_livetrackingverify()[pri:2, instance:testCases.Dashboard_func_test@fbd1f6]" name="test_dashboard_livetrackingverify" class="testCases.Dashboard_func_test"/>
+        <method signature="GPS_device_test.test_gpsdevicepage_printelementsInfo()[pri:2, instance:testCases.GPS_device_test@1ce24091]" name="test_gpsdevicepage_printelementsInfo" class="testCases.GPS_device_test"/>
       </group> <!-- functional -->
       <group name="gpsdevice">
-        <method signature="GPS_device_test.test_gpsdevicepage_elements()[pri:1, instance:testCases.GPS_device_test@2de23121]" name="test_gpsdevicepage_elements" class="testCases.GPS_device_test"/>
-        <method signature="GPS_device_test.test_gpsdevicepage_printelementsInfo()[pri:2, instance:testCases.GPS_device_test@2de23121]" name="test_gpsdevicepage_printelementsInfo" class="testCases.GPS_device_test"/>
+        <method signature="GPS_device_test.test_gpsdevicepage_elements()[pri:1, instance:testCases.GPS_device_test@1ce24091]" name="test_gpsdevicepage_elements" class="testCases.GPS_device_test"/>
+        <method signature="GPS_device_test.test_gpsdevicepage_printelementsInfo()[pri:2, instance:testCases.GPS_device_test@1ce24091]" name="test_gpsdevicepage_printelementsInfo" class="testCases.GPS_device_test"/>
       </group> <!-- gpsdevice -->
       <group name="regression">
-        <method signature="Login_func_test.test_login_logoutfunc(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:testCases.Login_func_test@587e5365]" name="test_login_logoutfunc" class="testCases.Login_func_test"/>
-        <method signature="Login_func_test.test_loginfunc(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.Login_func_test@587e5365]" name="test_loginfunc" class="testCases.Login_func_test"/>
+        <method signature="Login_func_test.test_login_logoutfunc(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:testCases.Login_func_test@2cd76f31]" name="test_login_logoutfunc" class="testCases.Login_func_test"/>
+        <method signature="Login_func_test.test_loginfunc(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.Login_func_test@2cd76f31]" name="test_loginfunc" class="testCases.Login_func_test"/>
       </group> <!-- regression -->
+      <group name="smoke">
+        <method signature="Alert_func_test.test_alertypefunc()[pri:1, instance:testCases.Alert_func_test@5dda768f]" name="test_alertypefunc" class="testCases.Alert_func_test"/>
+        <method signature="Alert_func_test.test_selectdevicefunc()[pri:2, instance:testCases.Alert_func_test@5dda768f]" name="test_selectdevicefunc" class="testCases.Alert_func_test"/>
+      </group> <!-- smoke -->
       <group name="login">
-        <method signature="Login_func_test.test_login_logoutfunc(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:testCases.Login_func_test@587e5365]" name="test_login_logoutfunc" class="testCases.Login_func_test"/>
-        <method signature="Login_func_test.test_loginfunc(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.Login_func_test@587e5365]" name="test_loginfunc" class="testCases.Login_func_test"/>
+        <method signature="Login_func_test.test_login_logoutfunc(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:testCases.Login_func_test@2cd76f31]" name="test_login_logoutfunc" class="testCases.Login_func_test"/>
+        <method signature="Login_func_test.test_loginfunc(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.Login_func_test@2cd76f31]" name="test_loginfunc" class="testCases.Login_func_test"/>
       </group> <!-- login -->
       <group name="dashboard">
-        <method signature="Dashboard_func_test.test_dashboardfunc_profilenameverify(java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:testCases.Dashboard_func_test@43c1b556]" name="test_dashboardfunc_profilenameverify" class="testCases.Dashboard_func_test"/>
-        <method signature="Dashboard_func_test.test_dashboard_livetrackingverify()[pri:4, instance:testCases.Dashboard_func_test@43c1b556]" name="test_dashboard_livetrackingverify" class="testCases.Dashboard_func_test"/>
+        <method signature="Dashboard_func_test.test_dashboardfunc_profilenameverify(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:testCases.Dashboard_func_test@fbd1f6]" name="test_dashboardfunc_profilenameverify" class="testCases.Dashboard_func_test"/>
+        <method signature="Dashboard_func_test.test_dashboard_livetrackingverify()[pri:2, instance:testCases.Dashboard_func_test@fbd1f6]" name="test_dashboard_livetrackingverify" class="testCases.Dashboard_func_test"/>
       </group> <!-- dashboard -->
     </groups>
-    <test started-at="2025-01-04T12:20:02 IST" name="Default test" finished-at="2025-01-04T12:20:40 IST" duration-ms="38738">
+    <test started-at="2025-03-02T22:55:45 IST" name="Vm Trackers GPS Application Test" finished-at="2025-03-02T22:56:17 IST" duration-ms="32115">
       <class name="testCases.Dashboard_func_test">
-        <test-method is-config="true" signature="setupSuite()[pri:0, instance:testCases.Dashboard_func_test@43c1b556]" started-at="2025-01-04T12:20:01 IST" name="setupSuite" finished-at="2025-01-04T12:20:02 IST" duration-ms="518" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupSuite -->
-        <test-method is-config="true" signature="launch_Browser()[pri:0, instance:testCases.Dashboard_func_test@43c1b556]" started-at="2025-01-04T12:20:02 IST" name="launch_Browser" finished-at="2025-01-04T12:20:24 IST" duration-ms="21888" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launch_Browser -->
-        <test-method signature="test_dashboardfunc_profilenameverify(java.lang.String,java.lang.String,java.lang.String)[pri:3, instance:testCases.Dashboard_func_test@43c1b556]" started-at="2025-01-04T12:20:38 IST" name="test_dashboardfunc_profilenameverify" data-provider="logintestData1" depends-on-groups="login" finished-at="2025-01-04T12:20:39 IST" duration-ms="1224" status="PASS">
+        <test-method signature="test_dashboardfunc_profilenameverify(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:testCases.Dashboard_func_test@fbd1f6]" started-at="2025-03-02T22:56:02 IST" name="test_dashboardfunc_profilenameverify" data-provider="logintestData1" depends-on-groups="login" finished-at="2025-03-02T22:56:03 IST" duration-ms="1208" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -58,21 +54,28 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_dashboardfunc_profilenameverify -->
-        <test-method signature="test_dashboard_livetrackingverify()[pri:4, instance:testCases.Dashboard_func_test@43c1b556]" started-at="2025-01-04T12:20:39 IST" name="test_dashboard_livetrackingverify" depends-on-groups="login" finished-at="2025-01-04T12:20:39 IST" duration-ms="554" status="PASS">
+        <test-method signature="test_dashboard_livetrackingverify()[pri:2, instance:testCases.Dashboard_func_test@fbd1f6]" started-at="2025-03-02T22:56:03 IST" name="test_dashboard_livetrackingverify" depends-on-groups="login" finished-at="2025-03-02T22:56:04 IST" duration-ms="500" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_dashboard_livetrackingverify -->
-        <test-method is-config="true" signature="tear_Down()[pri:0, instance:testCases.Dashboard_func_test@43c1b556]" started-at="2025-01-04T12:20:40 IST" name="tear_Down" finished-at="2025-01-04T12:20:40 IST" duration-ms="335" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tear_Down -->
-        <test-method is-config="true" signature="teardownSuite()[pri:0, instance:testCases.Dashboard_func_test@43c1b556]" started-at="2025-01-04T12:20:40 IST" name="teardownSuite" finished-at="2025-01-04T12:20:41 IST" duration-ms="552" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardownSuite -->
       </class> <!-- testCases.Dashboard_func_test -->
       <class name="testCases.Login_func_test">
-        <test-method signature="test_login_logoutfunc(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:testCases.Login_func_test@587e5365]" started-at="2025-01-04T12:20:24 IST" name="test_login_logoutfunc" data-provider="logintestData1" finished-at="2025-01-04T12:20:27 IST" duration-ms="3398" status="PASS">
+        <test-method is-config="true" signature="setupSuite()[pri:0, instance:testCases.Login_func_test@2cd76f31]" started-at="2025-03-02T22:55:44 IST" name="setupSuite" finished-at="2025-03-02T22:55:45 IST" duration-ms="440" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupSuite -->
+        <test-method is-config="true" signature="launch_Browser(org.testng.ITestContext)[pri:0, instance:testCases.Login_func_test@2cd76f31]" started-at="2025-03-02T22:55:45 IST" name="launch_Browser" finished-at="2025-03-02T22:55:51 IST" duration-ms="6181" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@7fd8c559]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launch_Browser -->
+        <test-method signature="test_login_logoutfunc(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:testCases.Login_func_test@2cd76f31]" started-at="2025-03-02T22:55:51 IST" name="test_login_logoutfunc" data-provider="logintestData1" finished-at="2025-03-02T22:55:55 IST" duration-ms="3677" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -93,7 +96,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_login_logoutfunc -->
-        <test-method signature="test_loginfunc(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.Login_func_test@587e5365]" started-at="2025-01-04T12:20:27 IST" name="test_loginfunc" data-provider="logintestData2" finished-at="2025-01-04T12:20:29 IST" duration-ms="1511" status="PASS">
+        <test-method signature="test_loginfunc(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.Login_func_test@2cd76f31]" started-at="2025-03-02T22:55:55 IST" name="test_loginfunc" data-provider="logintestData2" finished-at="2025-03-02T22:55:56 IST" duration-ms="819" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -114,7 +117,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_loginfunc -->
-        <test-method signature="test_loginfunc(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.Login_func_test@587e5365]" started-at="2025-01-04T12:20:29 IST" name="test_loginfunc" data-provider="logintestData2" finished-at="2025-01-04T12:20:30 IST" duration-ms="1107" status="PASS">
+        <test-method signature="test_loginfunc(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.Login_func_test@2cd76f31]" started-at="2025-03-02T22:55:56 IST" name="test_loginfunc" data-provider="logintestData2" finished-at="2025-03-02T22:55:56 IST" duration-ms="940" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -135,7 +138,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_loginfunc -->
-        <test-method signature="test_loginfunc(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.Login_func_test@587e5365]" started-at="2025-01-04T12:20:30 IST" name="test_loginfunc" data-provider="logintestData2" finished-at="2025-01-04T12:20:31 IST" duration-ms="1108" status="PASS">
+        <test-method signature="test_loginfunc(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.Login_func_test@2cd76f31]" started-at="2025-03-02T22:55:56 IST" name="test_loginfunc" data-provider="logintestData2" finished-at="2025-03-02T22:55:57 IST" duration-ms="850" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -156,7 +159,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_loginfunc -->
-        <test-method signature="test_loginfunc(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.Login_func_test@587e5365]" started-at="2025-01-04T12:20:31 IST" name="test_loginfunc" data-provider="logintestData2" finished-at="2025-01-04T12:20:32 IST" duration-ms="1060" status="PASS">
+        <test-method signature="test_loginfunc(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.Login_func_test@2cd76f31]" started-at="2025-03-02T22:55:57 IST" name="test_loginfunc" data-provider="logintestData2" finished-at="2025-03-02T22:55:58 IST" duration-ms="644" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -177,7 +180,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_loginfunc -->
-        <test-method signature="test_loginfunc(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.Login_func_test@587e5365]" started-at="2025-01-04T12:20:32 IST" name="test_loginfunc" data-provider="logintestData2" finished-at="2025-01-04T12:20:33 IST" duration-ms="1102" status="PASS">
+        <test-method signature="test_loginfunc(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.Login_func_test@2cd76f31]" started-at="2025-03-02T22:55:58 IST" name="test_loginfunc" data-provider="logintestData2" finished-at="2025-03-02T22:55:59 IST" duration-ms="665" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -198,7 +201,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_loginfunc -->
-        <test-method signature="test_loginfunc(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.Login_func_test@587e5365]" started-at="2025-01-04T12:20:33 IST" name="test_loginfunc" data-provider="logintestData2" finished-at="2025-01-04T12:20:34 IST" duration-ms="890" status="PASS">
+        <test-method signature="test_loginfunc(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.Login_func_test@2cd76f31]" started-at="2025-03-02T22:55:59 IST" name="test_loginfunc" data-provider="logintestData2" finished-at="2025-03-02T22:55:59 IST" duration-ms="593" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -219,7 +222,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_loginfunc -->
-        <test-method signature="test_loginfunc(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.Login_func_test@587e5365]" started-at="2025-01-04T12:20:34 IST" name="test_loginfunc" data-provider="logintestData2" finished-at="2025-01-04T12:20:35 IST" duration-ms="1049" status="PASS">
+        <test-method signature="test_loginfunc(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.Login_func_test@2cd76f31]" started-at="2025-03-02T22:55:59 IST" name="test_loginfunc" data-provider="logintestData2" finished-at="2025-03-02T22:56:00 IST" duration-ms="735" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -240,7 +243,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_loginfunc -->
-        <test-method signature="test_loginfunc(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.Login_func_test@587e5365]" started-at="2025-01-04T12:20:35 IST" name="test_loginfunc" data-provider="logintestData2" finished-at="2025-01-04T12:20:36 IST" duration-ms="901" status="PASS">
+        <test-method signature="test_loginfunc(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.Login_func_test@2cd76f31]" started-at="2025-03-02T22:56:00 IST" name="test_loginfunc" data-provider="logintestData2" finished-at="2025-03-02T22:56:01 IST" duration-ms="678" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -261,7 +264,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_loginfunc -->
-        <test-method signature="test_loginfunc(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.Login_func_test@587e5365]" started-at="2025-01-04T12:20:36 IST" name="test_loginfunc" data-provider="logintestData2" finished-at="2025-01-04T12:20:37 IST" duration-ms="721" status="PASS">
+        <test-method signature="test_loginfunc(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.Login_func_test@2cd76f31]" started-at="2025-03-02T22:56:01 IST" name="test_loginfunc" data-provider="logintestData2" finished-at="2025-03-02T22:56:01 IST" duration-ms="699" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -282,7 +285,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_loginfunc -->
-        <test-method signature="test_loginfunc(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.Login_func_test@587e5365]" started-at="2025-01-04T12:20:37 IST" name="test_loginfunc" data-provider="logintestData2" finished-at="2025-01-04T12:20:38 IST" duration-ms="824" status="PASS">
+        <test-method signature="test_loginfunc(java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:testCases.Login_func_test@2cd76f31]" started-at="2025-03-02T22:56:01 IST" name="test_loginfunc" data-provider="logintestData2" finished-at="2025-03-02T22:56:02 IST" duration-ms="797" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -303,17 +306,35 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_loginfunc -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.Login_func_test@2cd76f31]" started-at="2025-03-02T22:56:16 IST" name="tearDown" finished-at="2025-03-02T22:56:17 IST" duration-ms="412" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="teardownSuite()[pri:0, instance:testCases.Login_func_test@2cd76f31]" started-at="2025-03-02T22:56:17 IST" name="teardownSuite" finished-at="2025-03-02T22:56:17 IST" duration-ms="38" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownSuite -->
       </class> <!-- testCases.Login_func_test -->
+      <class name="testCases.Alert_func_test">
+        <test-method signature="test_alertypefunc()[pri:1, instance:testCases.Alert_func_test@5dda768f]" started-at="2025-03-02T22:56:05 IST" name="test_alertypefunc" depends-on-groups="gpsdevice" finished-at="2025-03-02T22:56:05 IST" duration-ms="671" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_alertypefunc -->
+        <test-method signature="test_selectdevicefunc()[pri:2, instance:testCases.Alert_func_test@5dda768f]" started-at="2025-03-02T22:56:05 IST" name="test_selectdevicefunc" depends-on-groups="gpsdevice" finished-at="2025-03-02T22:56:16 IST" duration-ms="10905" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_selectdevicefunc -->
+      </class> <!-- testCases.Alert_func_test -->
       <class name="testCases.GPS_device_test">
-        <test-method signature="test_gpsdevicepage_elements()[pri:1, instance:testCases.GPS_device_test@2de23121]" started-at="2025-01-04T12:20:39 IST" name="test_gpsdevicepage_elements" depends-on-groups="dashboard" finished-at="2025-01-04T12:20:40 IST" duration-ms="256" status="PASS">
+        <test-method signature="test_gpsdevicepage_elements()[pri:1, instance:testCases.GPS_device_test@1ce24091]" started-at="2025-03-02T22:56:04 IST" name="test_gpsdevicepage_elements" depends-on-groups="dashboard" finished-at="2025-03-02T22:56:04 IST" duration-ms="439" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_gpsdevicepage_elements -->
-        <test-method signature="test_gpsdevicepage_printelementsInfo()[pri:2, instance:testCases.GPS_device_test@2de23121]" started-at="2025-01-04T12:20:40 IST" name="test_gpsdevicepage_printelementsInfo" depends-on-groups="dashboard" finished-at="2025-01-04T12:20:40 IST" duration-ms="329" status="PASS">
+        <test-method signature="test_gpsdevicepage_printelementsInfo()[pri:2, instance:testCases.GPS_device_test@1ce24091]" started-at="2025-03-02T22:56:04 IST" name="test_gpsdevicepage_printelementsInfo" depends-on-groups="dashboard" finished-at="2025-03-02T22:56:05 IST" duration-ms="330" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test_gpsdevicepage_printelementsInfo -->
       </class> <!-- testCases.GPS_device_test -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Vm Trackers GPS Application Test -->
+  </suite> <!-- VM Maps Suite -->
 </testng-results>
