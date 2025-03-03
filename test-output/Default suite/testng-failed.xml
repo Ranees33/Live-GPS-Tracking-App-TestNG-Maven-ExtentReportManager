@@ -7,8 +7,8 @@
         <methods>
           <include name="tear_Down"/>
           <include name="teardownSuite"/>
-          <include name="test_login_logoutfunc" invocation-numbers="0"/>
           <include name="setupSuite"/>
+          <include name="test_loginfunc" invocation-numbers="0 1 2 3 4 5 6 7 8 9"/>
           <include name="launch_Browser"/>
         </methods>
       </class> <!-- testCases.Login_func_test -->

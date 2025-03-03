@@ -1,5 +1,15 @@
 package extentReports;
 
+import java.io.File;
+import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
@@ -53,6 +63,20 @@ public class ExtentReportManager {
     // Get the current test instance
     public static ExtentTest getTest() {
         return test.get();
+    }
+    
+    
+    // Capture screenshot and return the file path
+    public static String captureScreenshot(WebDriver driver, String screenshotName) {
+        String dateName = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
+        String destination = System.getProperty("user.dir") + "/screenshots/" + screenshotName + dateName + ".png";
+        File source = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+        try {
+            FileUtils.copyFile(source, new File(destination));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return destination;
     }
 
 }

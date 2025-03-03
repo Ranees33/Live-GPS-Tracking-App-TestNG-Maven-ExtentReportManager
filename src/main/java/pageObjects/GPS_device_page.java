@@ -25,5 +25,8 @@ public class GPS_device_page {
 	
 	@FindBy(xpath = "//*[@class = 'Add-device-contaner'][1]")
 	public List<WebElement> printelementsInfo;
+	
+	@FindBy(id = "Button")
+	public WebElement clickcancelBtn;
 
 }
