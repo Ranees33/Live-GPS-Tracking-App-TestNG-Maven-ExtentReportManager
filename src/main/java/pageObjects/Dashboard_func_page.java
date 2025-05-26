@@ -23,13 +23,13 @@ public class Dashboard_func_page {
 	@FindBy(xpath = "//*[@id = 'loginSubmit']")
 	public WebElement submitloginBtn;
 	
-	@FindBy(xpath = "//*[@class=\"navbar_left\"]")
+	@FindBy(xpath = "(//*[text() = 'arkranees'])[2]")
 	public WebElement verifyprofileText;
 	
-	@FindBy(xpath = "(//p[text()='Live Tracking'])[1]")
+	@FindBy(xpath = "(//*[text()='Live Tracking'])[1]")
 	public WebElement clicklivetrackingMenu;
 	
-	@FindBy(xpath = "//*[text() = 'No Devices Found']")
+	@FindBy(xpath = "//*[@class='detail_div']/*[1]")
 	public WebElement verifynodevicefoundText;
 	
 }

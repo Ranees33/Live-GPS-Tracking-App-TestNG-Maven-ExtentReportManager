@@ -25,7 +25,7 @@ public class Login_func_page {
 	@FindBy(xpath = "(//*[text()='arkranees'])[2]")
 	public WebElement clickuserProfile;
 	
-	@FindBy(xpath = "//p[text()='Log Out']")
+	@FindBy(xpath = "//p[text()='Logout']")
 	public WebElement clicklogoutEle;
 	
 	

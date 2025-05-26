@@ -3,6 +3,7 @@ package testCases;
 import java.time.Duration;
 import java.util.List;
 
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -22,21 +23,25 @@ import pageObjects.Alert_func_page;
 public class Alert_func_test extends Common_functions {
 	
 	Alert_func_page alertpage;
+	WebDriver driver;
 	ExtentTest test;
 	WebDriverWait wait;
 	
 	@Test(
 			priority = 1,
 			groups = {"smoke"},
-			dependsOnGroups = "gpsdevice",
+			dependsOnGroups = "dashboard",
 			retryAnalyzer = RetryAnalyzer.class)
 	public void test_alertypefunc() {
+		
+        driver = Common_functions.getDriver(); // Get thread-safe driver
+		
 		ExtentReportManager.startTest(
 				"Validating alert type functionality & the values in Alert Page", 
 				"Ranees", 
 				"Smoke & Functional Testing");
 		
-		test = ExtentReportManager.getTest	();
+		test = ExtentReportManager.getTest();
 		
 		// Navigating to Alerts Page
 		alertpage = new Alert_func_page(driver);
@@ -53,7 +58,7 @@ public class Alert_func_test extends Common_functions {
 			alertpage.alertypeleClick.click();
 			List<WebElement> alertType = alertpage.alertypefuncEle;
 			for (WebElement iteratealertElement : alertType) {
-				System.out.println("Alert Type Element Values: \n" + iteratealertElement.getText() + "\n");
+				System.out.println("\n" + "Alert Type Element Values: \n" + iteratealertElement.getText() + "\n");
 				test.info("Alert Type Element Values: " + iteratealertElement.getText());
 			}
 			
@@ -66,9 +71,11 @@ public class Alert_func_test extends Common_functions {
 		@Test(
 				priority = 2,
 				groups = {"smoke"},
-				dependsOnGroups = "gpsdevice",
+				dependsOnGroups = "dashboard",
 				retryAnalyzer = RetryAnalyzer.class)
 		public void test_selectdevicefunc() {
+	        driver = Common_functions.getDriver(); // Get thread-safe driver
+	        
 			ExtentReportManager.startTest(
 					"Validating select device functionality in Alert Page", 
 					"Ranees", 
@@ -80,7 +87,7 @@ public class Alert_func_test extends Common_functions {
 			
 			try {
 				// Using Explicit Wait Method to Interact
-				wait =  new WebDriverWait(driver, Duration.ofSeconds(10));
+				wait =  new WebDriverWait(driver, Duration.ofSeconds(20));
 				wait.until(ExpectedConditions.elementToBeClickable((alertpage.selectdeviceEle))).click();
 				List<WebElement> selectdeviceValues = alertpage.selectdeviceleValues;
 				for (WebElement iterateseledevElement : selectdeviceValues) {
@@ -92,6 +99,8 @@ public class Alert_func_test extends Common_functions {
 			} catch (Exception e) {
 				test.log(Status.FAIL, "Test failed due to: " + e.getMessage());
 			}
+			
+			System.out.println("Test Alert Page Function Method " + Thread.currentThread().getId());
 
 	}
 
