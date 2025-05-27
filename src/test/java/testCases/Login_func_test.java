@@ -8,6 +8,7 @@ import java.time.Duration;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -32,6 +33,7 @@ public class Login_func_test extends Common_functions {
 
 	// Initialize the page object and base class for extent report
 	Login_func_page loginPage;
+	WebDriver driver;
 	WebDriverWait wait;
 	ExtentTest test;
 
@@ -42,7 +44,9 @@ public class Login_func_test extends Common_functions {
 			dataProviderClass = Excel_data_code.class, 
 			retryAnalyzer = RetryAnalyzer.class
 			)
-	public void test_login_logoutfunc(String eMail, String pWord, String expected_Result) {
+	public void testValidLoginLogoutFunc(String eMail, String pWord, String expected_Result) {
+		
+        driver = Common_functions.getDriver(); // Get thread-safe driver
 		
 		System.out.println("Starting the login functionality test...");  // Debug log
 
@@ -59,7 +63,7 @@ public class Login_func_test extends Common_functions {
 			wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 			
 			performLogin(eMail, pWord);
-			verifyloginResult(expected_Result);
+			verifyvalidloginResult(expected_Result);
 			performLogout();
 			
 			test.info("'Login' and 'Logout' Test Method Passed");
@@ -86,7 +90,7 @@ public class Login_func_test extends Common_functions {
 	}
 
 //			 Verify the results using Hard assertions and try catch block!
-	private void verifyloginResult(String expected_Result) {
+	private void verifyvalidloginResult(String expected_Result) {
 		try {
 			wait.until(ExpectedConditions
 					.presenceOfElementLocated(By.xpath("//*[contains(text(),'" + expected_Result + "')]")));
@@ -124,7 +128,9 @@ public class Login_func_test extends Common_functions {
 			dataProviderClass = Excel_data_code.class, 
 			retryAnalyzer = RetryAnalyzer.class
 			)
-	public void test_loginfunc(String eMail, String pWord, String expected_Result) {
+	public void testInvalidLoginFunc(String eMail, String pWord, String expected_Result) {
+		
+		driver = Common_functions.getDriver(); // Get thread-safe driver
 		
 		ExtentReportManager.startTest(
 				"Login Functionality Test Method initiated (Negative Scenarios)", 
@@ -136,8 +142,8 @@ public class Login_func_test extends Common_functions {
 			loginPage = new Login_func_page(driver);
 			wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 			
-			performLogin2(eMail, pWord);
-			verifyloginResults(expected_Result);
+			invalidperformLogin(eMail, pWord);
+			verifyinvalidloginResults(expected_Result);
 			
 			test.log(Status.INFO, "All 'Login' Test Method with invalid test data are Passed");
 			
@@ -150,7 +156,7 @@ public class Login_func_test extends Common_functions {
 		
 	}
 
-		private void performLogin2(String eMail, String pWord) {
+		private void invalidperformLogin(String eMail, String pWord) {
 			try {
 				driver.navigate().refresh();
 				// Perform login steps
@@ -167,7 +173,7 @@ public class Login_func_test extends Common_functions {
 		}
 	
 		// Verify the results using Hard assertions and try catch block!
-		private void verifyloginResults(String expected_Result) {
+		private void verifyinvalidloginResults(String expected_Result) {
 			try {
 				wait.until(ExpectedConditions
 						.presenceOfElementLocated(By.xpath("//*[contains(text(),'" + expected_Result + "')]")));

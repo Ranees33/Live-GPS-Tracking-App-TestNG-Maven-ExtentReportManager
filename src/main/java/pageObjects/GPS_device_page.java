@@ -17,16 +17,16 @@ public class GPS_device_page {
 	@FindBy(xpath = "//*[text() = 'GPS Devices']")
 	public WebElement navigategpsPage;
 	
-	@FindBy(id = "AddDeviceIconButton")
+	@FindBy(xpath = "//*[text() = 'Add Device']")
 	public WebElement visibleadd_devicebtnEle;
 	
-	@FindBy(id = "AddDeviceIconButton")
+	@FindBy(xpath = "//*[text() = 'Add Device']")
 	public WebElement clickaddeviceBtn;
 	
-	@FindBy(xpath = "//*[@class = 'Add-device-contaner'][1]")
+	@FindBy(xpath = "//*[@class='input_container']")
 	public List<WebElement> printelementsInfo;
 	
-	@FindBy(id = "Button")
+	@FindBy(xpath = "//*[text() = 'Cancel']")
 	public WebElement clickcancelBtn;
 
 }

@@ -4,6 +4,7 @@ import static org.testng.Assert.assertEquals;
 
 import java.util.List;
 
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
@@ -19,6 +20,7 @@ import pageObjects.GPS_device_page;
 public class GPS_device_test extends Common_functions {
 	
 	GPS_device_page gpsdevice;
+	WebDriver driver;
 	ExtentTest test;
 	
 	@Test(
@@ -27,6 +29,8 @@ public class GPS_device_test extends Common_functions {
 			dependsOnGroups = "dashboard", 
 			retryAnalyzer = RetryAnalyzer.class)
 	public void test_gpsdevicepage_elements() {
+		
+        driver = Common_functions.getDriver(); // Get thread-safe driver
 		
 		ExtentReportManager.startTest("GPS Device Page Elements Visible Verification", "Ranees", "Functional Testing");
 		test = ExtentReportManager.getTest();
@@ -48,7 +52,7 @@ public class GPS_device_test extends Common_functions {
 		}
 		
 		test.log(Status.INFO, "GPS Device Page Elements Validation Test Passed");
-		System.out.println("Test GPS Device Page Elements Validation Method " + Thread.currentThread().getId());
+		System.out.println("\n" + "Test GPS Device Page Elements Validation Method " + Thread.currentThread().getId());
 		
 	}
 	
@@ -58,6 +62,9 @@ public class GPS_device_test extends Common_functions {
 			dependsOnGroups = "dashboard", 
 			retryAnalyzer = RetryAnalyzer.class)
 	public void test_gpsdevicepage_printelementsInfo() {
+		
+        driver = Common_functions.getDriver(); // Get thread-safe driver
+
 		ExtentReportManager.startTest("GPS Device Page Pop up Window Page Elements Info Validation", "Ranees", "Functional Testing");
 		test = ExtentReportManager.getTest();
 		

@@ -1,6 +1,7 @@
 package testCases;
 
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Listeners;
@@ -17,6 +18,7 @@ import pageObjects.Dashboard_func_page;
 public class Dashboard_func_test extends Common_functions {
 	
 	Dashboard_func_page dashboard;
+	WebDriver driver;
 	ExtentTest test;
 	
 	@Test(
@@ -27,6 +29,8 @@ public class Dashboard_func_test extends Common_functions {
 			dataProviderClass = Excel_data_code.class, 
 			retryAnalyzer = RetryAnalyzer.class)
 	public void test_dashboardfunc_profilenameverify(String eMail, String pWord, String expected) {
+		
+        driver = Common_functions.getDriver(); // Get thread-safe driver
 		
 		ExtentReportManager.startTest("Dashboard Page User Profile Name Validation", "Ranees", "Functional Testing");
 		test = ExtentReportManager.getTest();
@@ -40,11 +44,11 @@ public class Dashboard_func_test extends Common_functions {
 		test.info("Users enter the email and password with valid data");
 		String verifyprofileText = dashboard.verifyprofileText.getText();
 		
-		// Assert to ensure the validation directly that the profile name is "HiArkranees"
-		Assert.assertTrue(verifyprofileText.contains("ranees"), "Profile name does not contain 'ranees'");
+		// Use Assert to ensure the validation directly that the profile name is "HiArkranees"
+		Assert.assertTrue(verifyprofileText.contains("arkranees"), "Profile name does not contain 'ranees'");
 		
 		// Alternatively Use the condition in the if-else
-		if (verifyprofileText.contains("ranees")) {
+		if (verifyprofileText.contains("arkranees")) {
 			test.pass("Profile name contains 'ranees': " + verifyprofileText);
 		} else {
 			test.fail("Profile name does not contain 'ranees': " + verifyprofileText);
@@ -52,7 +56,7 @@ public class Dashboard_func_test extends Common_functions {
 		}
 		
 		test.log(Status.INFO, "Dashboard Profile Name Validation Test Passed");
-		System.out.println("Test Dashboard Profile Verify Method " + Thread.currentThread().getId());
+		System.out.println("\n" + "Test Dashboard Profile Verify Method " + Thread.currentThread().getId());
 	}
 	
 	@Test(
@@ -62,6 +66,8 @@ public class Dashboard_func_test extends Common_functions {
 			retryAnalyzer = RetryAnalyzer.class)
 	public void test_dashboard_livetrackingverify() {
 		
+        driver = Common_functions.getDriver(); // Get thread-safe driver
+		
 		// test = ExtentReportManager.extentReport.createTest("Dashboard Live Tracking Status Visible Validation");
 		// test.assignAuthor("Ranees");
 		// test.assignCategory("Functional Testing");
@@ -69,7 +75,7 @@ public class Dashboard_func_test extends Common_functions {
 		ExtentReportManager.startTest("Dashboard Live Tracking Status Visible Validation", "Ranees", "Functional Testing");
 		test = ExtentReportManager.getTest();
 		
-		String expectedText = "No Devices Found";
+		String expectedText = "0 Devices Total";
 		dashboard.clicklivetrackingMenu.click();
 		test.info("Navigate to the tracking page");
 		String verifyliveTracking = dashboard.verifynodevicefoundText.getText();

@@ -3,6 +3,8 @@ package baseClass;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.time.Duration;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Properties;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -21,7 +23,10 @@ import extentReports.ExtentReportManager;
 
 public class Common_functions {
 	
-	public static WebDriver driver = null;
+	// public static WebDriver driver = null;    // Static WebDriver
+	
+	// Replace static WebDriver with ThreadLocal<WebDriver>
+    private static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
 	public static Properties properties = null;
 	
 	public Properties loadPropertyFile() throws IOException {
@@ -39,7 +44,6 @@ public class Common_functions {
 		ExtentReportManager.setupExtentReports();
     }
 	
-
 	@BeforeTest(alwaysRun = true)
 	public void launch_Browser(ITestContext context) throws IOException {
 		
@@ -52,11 +56,20 @@ public class Common_functions {
 		if (browser.equalsIgnoreCase("chrome")) {
 			// Set up ChromeDriver dynamically using WebDriver Manager
 			WebDriverManager.chromedriver().setup();
+			
+			Map<String, Object> prefs = new HashMap<>();
+			prefs.put("credentials_enable_service", false);
+			prefs.put("profile.password_manager_enabled", false);
+			
 			ChromeOptions options = new ChromeOptions();
+			options.setExperimentalOption("prefs", prefs);
+			options.addArguments("disable-notifications");
+			options.addArguments("--disable-save-password-bubble"); // Disables the "Save Password" prompt
 			options.addArguments("--remote-allow-origins=*");
-			// Set preferences to disable the infobar
+			// Set preferences to disable the infobar 'Browser controlled by automated tool'
 			options.setExperimentalOption("excludeSwitches", new String[]{"enable-automation"});
-			driver = new ChromeDriver(options);
+			driver.set(new ChromeDriver(options));
+			
 		} else if (browser.equalsIgnoreCase("firefox")) {
 			// Set up GeckoDriver dynamically using WebDriver Manager
 			WebDriverManager.firefoxdriver().setup();
@@ -64,24 +77,29 @@ public class Common_functions {
 			// Set preferences to disable the infobar
 	        options.addPreference("dom.webdriver.enabled", false);
 	        options.addPreference("useAutomationExtension", false);
-			driver = new FirefoxDriver(options);
+			driver.set(new FirefoxDriver(options));
 		}
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+		getDriver().manage().window().maximize();
+		getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 		// Navigate to the base URL
-		driver.get(loginpage_url);
+		getDriver().get(loginpage_url);
 		// Set the driver in the test context
-		context.setAttribute("driver", driver);
+		context.setAttribute("driver", getDriver());
 		
 	}
+	
+	// Helper method to get the thread-safe driver
+    public static WebDriver getDriver() {
+        return driver.get();
+    }
 		
 
 	@AfterTest(alwaysRun = true)
 	public void tearDown() {
-		if (driver != null) {
-			driver.quit();			
+		if (getDriver() != null) {
+			getDriver().quit();	
+			driver.remove();    // Clean up ThreadLocal
 		}
-
 	}
 	
 	@AfterSuite(alwaysRun = true)
