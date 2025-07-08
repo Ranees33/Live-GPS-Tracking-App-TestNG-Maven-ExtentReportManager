@@ -16,6 +16,7 @@
 			</run>
 		</groups> -->
 
+        <parameter name="browser" value="chrome"/>
 		<classes>
 			<class name="testCases.Login_func_test" />
 			<class name="testCases.Dashboard_func_test" />
@@ -31,7 +32,8 @@
 				<include name="smoke" />
 			</run>
 		</groups> -->
-
+        
+        <parameter name="browser" value="firefox"/>
 		<classes>
 			<class name="testCases.Login_func_test" />
 			<class name="testCases.Dashboard_func_test" />
