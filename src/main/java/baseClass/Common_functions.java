@@ -55,12 +55,12 @@ public class Common_functions {
 	public void launch_Browser(ITestContext context, String browser) throws IOException {
 		
 		loadPropertyFile();
-		String browsers = properties.getProperty("browser");
+//		String browsers = properties.getProperty("browser");
 		final String loginpage_url = properties.getProperty("test_Url");
 //		final String loginpage_url2 = properties.getProperty("test_Url2");
 		
 
-		if (browsers.equalsIgnoreCase("chrome")) {
+		if (browser.equalsIgnoreCase("chrome")) {
 			// Set up ChromeDriver dynamically using WebDriver Manager
 			WebDriverManager.chromedriver().setup();
 			
@@ -89,7 +89,7 @@ public class Common_functions {
 //			driver.set(new ChromeDriver(options));
             driver.set(new RemoteWebDriver(new URL(BROWSERSTACK_URL), options));
 			
-		} else if (browsers.equalsIgnoreCase("firefox")) {
+		} else if (browser.equalsIgnoreCase("firefox")) {
 			// Set up GeckoDriver dynamically using WebDriver Manager
 			WebDriverManager.firefoxdriver().setup();
 			FirefoxOptions options = new FirefoxOptions();
