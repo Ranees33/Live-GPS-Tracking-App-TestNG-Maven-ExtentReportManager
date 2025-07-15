@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Vm Trackers GPS Application Test Flow 2</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>15/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/15</td>
 </tr><tr>
-<td>Started on:</td><td>Mon May 26 18:55:37 IST 2025</td>
+<td>Started on:</td><td>Tue Jul 08 20:15:20 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>25 seconds (25981 ms)</td>
+<tr><td>Total time:</td><td>0 seconds (251 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -76,80 +76,490 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testCases.Login_func_test.testInvalidLoginFunc()'><b>testInvalidLoginFunc</b><br>Test class: testCases.Login_func_test<br>Parameters: tonyboniee@gmail.com, , Please Enter Password</td>
-<td></td>
-<td>0</td>
-<td>testCases.Login_func_test@7b9a4292</td></tr>
-<tr>
-<td title='testCases.Login_func_test.testInvalidLoginFunc()'><b>testInvalidLoginFunc</b><br>Test class: testCases.Login_func_test<br>Parameters: , Ranees@12345, Please Enter Valid Email</td>
-<td></td>
-<td>0</td>
-<td>testCases.Login_func_test@7b9a4292</td></tr>
-<tr>
-<td title='testCases.Login_func_test.testInvalidLoginFunc()'><b>testInvalidLoginFunc</b><br>Test class: testCases.Login_func_test<br>Parameters: tonybonies@yahoo.com, Ranees@$1234, User does not exists</td>
-<td></td>
-<td>0</td>
-<td>testCases.Login_func_test@7b9a4292</td></tr>
-<tr>
-<td title='testCases.Login_func_test.testInvalidLoginFunc()'><b>testInvalidLoginFunc</b><br>Test class: testCases.Login_func_test<br>Parameters: tony123@gmail.com, Ranees@12345, User does not exists</td>
-<td></td>
-<td>1</td>
-<td>testCases.Login_func_test@7b9a4292</td></tr>
-<tr>
-<td title='testCases.Dashboard_func_test.test_dashboardfunc_profilenameverify()'><b>test_dashboardfunc_profilenameverify</b><br>Test class: testCases.Dashboard_func_test<br>Parameters: tonyboniee@gmail.com, Ranees@12345, Logged In Successfully</td>
-<td></td>
-<td>1</td>
-<td>testCases.Dashboard_func_test@9f116cc</td></tr>
+<td title='testCases.Login_func_test.launch_Browser()'><b>launch_Browser</b><br>Test class: testCases.Login_func_test</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browse&apos; is required by BeforeTest on method launch_Browser but has not been marked @Optional or defined
+in C:\Selenium\VMTrackers_GPS_Application-Mvn_Projects\testng.xml
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace960863698", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace960863698'><pre>org.testng.TestNGException: 
+Parameter &apos;browse&apos; is required by BeforeTest on method launch_Browser but has not been marked @Optional or defined
+in C:\Selenium\VMTrackers_GPS_Application-Mvn_Projects\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:264)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:690)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:644)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+</pre></div></td>
+<td>-1751985920</td>
+<td>testCases.Login_func_test@59309333</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
 <tr>
 <td title='testCases.Login_func_test.testInvalidLoginFunc()'><b>testInvalidLoginFunc</b><br>Test class: testCases.Login_func_test<br>Parameters: tony!boniee@gmail.com, Ranees: @'12345', Please Enter Valid Email</td>
-<td></td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browse&apos; is required by BeforeTest on method launch_Browser but has not been marked @Optional or defined
+in C:\Selenium\VMTrackers_GPS_Application-Mvn_Projects\testng.xml
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1907521937", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1907521937'><pre>org.testng.TestNGException: 
+Parameter &apos;browse&apos; is required by BeforeTest on method launch_Browser but has not been marked @Optional or defined
+in C:\Selenium\VMTrackers_GPS_Application-Mvn_Projects\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:264)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:690)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:644)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+</pre></div></td>
 <td>0</td>
-<td>testCases.Login_func_test@7b9a4292</td></tr>
+<td>testCases.Login_func_test@59309333</td></tr>
 <tr>
-<td title='testCases.Login_func_test.testInvalidLoginFunc()'><b>testInvalidLoginFunc</b><br>Test class: testCases.Login_func_test<br>Parameters: tonyboniee@gmail.com, ranees12, You have entered Invalid Password</td>
-<td></td>
+<td title='testCases.Login_func_test.testInvalidLoginFunc()'><b>testInvalidLoginFunc</b><br>Test class: testCases.Login_func_test<br>Parameters: tonyboniee@gmail.com, , Please Enter Password</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browse&apos; is required by BeforeTest on method launch_Browser but has not been marked @Optional or defined
+in C:\Selenium\VMTrackers_GPS_Application-Mvn_Projects\testng.xml
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1447091240", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1447091240'><pre>org.testng.TestNGException: 
+Parameter &apos;browse&apos; is required by BeforeTest on method launch_Browser but has not been marked @Optional or defined
+in C:\Selenium\VMTrackers_GPS_Application-Mvn_Projects\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:264)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:690)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:644)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+</pre></div></td>
 <td>0</td>
-<td>testCases.Login_func_test@7b9a4292</td></tr>
-<tr>
-<td title='testCases.Login_func_test.testInvalidLoginFunc()'><b>testInvalidLoginFunc</b><br>Test class: testCases.Login_func_test<br>Parameters: tonyboniee@gmail.com, Ranees12345, You have entered Invalid Password</td>
-<td></td>
-<td>0</td>
-<td>testCases.Login_func_test@7b9a4292</td></tr>
-<tr>
-<td title='testCases.Login_func_test.testValidLoginLogoutFunc()'><b>testValidLoginLogoutFunc</b><br>Test class: testCases.Login_func_test<br>Parameters: tonyboniee@gmail.com, Ranees@12345, Logged In Successfully</td>
-<td></td>
-<td>6</td>
-<td>testCases.Login_func_test@7b9a4292</td></tr>
-<tr>
-<td title='testCases.Login_func_test.testInvalidLoginFunc()'><b>testInvalidLoginFunc</b><br>Test class: testCases.Login_func_test<br>Parameters: tonyboniee@gmail.com, Rn@!@#$%, You have entered Invalid Password</td>
-<td></td>
-<td>0</td>
-<td>testCases.Login_func_test@7b9a4292</td></tr>
-<tr>
-<td title='testCases.Alert_func_test.test_selectdevicefunc()'><b>test_selectdevicefunc</b><br>Test class: testCases.Alert_func_test</td>
-<td></td>
-<td>0</td>
-<td>testCases.Alert_func_test@12468a38</td></tr>
-<tr>
-<td title='testCases.Login_func_test.testInvalidLoginFunc()'><b>testInvalidLoginFunc</b><br>Test class: testCases.Login_func_test<br>Parameters: TonyBoniee@Gmail.Com, Ranees@12345, User does not exists</td>
-<td></td>
-<td>0</td>
-<td>testCases.Login_func_test@7b9a4292</td></tr>
-<tr>
-<td title='testCases.Dashboard_func_test.test_dashboard_livetrackingverify()'><b>test_dashboard_livetrackingverify</b><br>Test class: testCases.Dashboard_func_test</td>
-<td></td>
-<td>0</td>
-<td>testCases.Dashboard_func_test@9f116cc</td></tr>
-<tr>
-<td title='testCases.Login_func_test.testInvalidLoginFunc()'><b>testInvalidLoginFunc</b><br>Test class: testCases.Login_func_test<br>Parameters: tonyboniee@gmail.com, Raneessu@123456, You have entered Invalid Password</td>
-<td></td>
-<td>2</td>
-<td>testCases.Login_func_test@7b9a4292</td></tr>
+<td>testCases.Login_func_test@59309333</td></tr>
 <tr>
 <td title='testCases.Alert_func_test.test_alertypefunc()'><b>test_alertypefunc</b><br>Test class: testCases.Alert_func_test</td>
-<td></td>
-<td>2</td>
-<td>testCases.Alert_func_test@12468a38</td></tr>
+<td><div><pre>java.lang.Throwable: Method Alert_func_test.test_alertypefunc()[pri:1, instance:testCases.Alert_func_test@6d763516] depends on not successfully finished methods in group &quot;dashboard&quot;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+... Removed 8 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1406078118", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1406078118'><pre>java.lang.Throwable: Method Alert_func_test.test_alertypefunc()[pri:1, instance:testCases.Alert_func_test@6d763516] depends on not successfully finished methods in group &quot;dashboard&quot;
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+</pre></div></td>
+<td>0</td>
+<td>testCases.Alert_func_test@6d763516</td></tr>
+<tr>
+<td title='testCases.Login_func_test.testInvalidLoginFunc()'><b>testInvalidLoginFunc</b><br>Test class: testCases.Login_func_test<br>Parameters: tonyboniee@gmail.com, ranees12, You have entered Invalid Password</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browse&apos; is required by BeforeTest on method launch_Browser but has not been marked @Optional or defined
+in C:\Selenium\VMTrackers_GPS_Application-Mvn_Projects\testng.xml
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace669962755", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace669962755'><pre>org.testng.TestNGException: 
+Parameter &apos;browse&apos; is required by BeforeTest on method launch_Browser but has not been marked @Optional or defined
+in C:\Selenium\VMTrackers_GPS_Application-Mvn_Projects\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:264)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:690)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:644)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+</pre></div></td>
+<td>0</td>
+<td>testCases.Login_func_test@59309333</td></tr>
+<tr>
+<td title='testCases.Login_func_test.testInvalidLoginFunc()'><b>testInvalidLoginFunc</b><br>Test class: testCases.Login_func_test<br>Parameters: TonyBoniee@Gmail.Com, Ranees@12345, User does not exists</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browse&apos; is required by BeforeTest on method launch_Browser but has not been marked @Optional or defined
+in C:\Selenium\VMTrackers_GPS_Application-Mvn_Projects\testng.xml
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace558055437", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace558055437'><pre>org.testng.TestNGException: 
+Parameter &apos;browse&apos; is required by BeforeTest on method launch_Browser but has not been marked @Optional or defined
+in C:\Selenium\VMTrackers_GPS_Application-Mvn_Projects\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:264)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:690)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:644)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+</pre></div></td>
+<td>0</td>
+<td>testCases.Login_func_test@59309333</td></tr>
+<tr>
+<td title='testCases.Alert_func_test.test_selectdevicefunc()'><b>test_selectdevicefunc</b><br>Test class: testCases.Alert_func_test</td>
+<td><div><pre>java.lang.Throwable: Method Alert_func_test.test_selectdevicefunc()[pri:2, instance:testCases.Alert_func_test@6d763516] depends on not successfully finished methods in group &quot;dashboard&quot;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+... Removed 8 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace194086910", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace194086910'><pre>java.lang.Throwable: Method Alert_func_test.test_selectdevicefunc()[pri:2, instance:testCases.Alert_func_test@6d763516] depends on not successfully finished methods in group &quot;dashboard&quot;
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+</pre></div></td>
+<td>0</td>
+<td>testCases.Alert_func_test@6d763516</td></tr>
+<tr>
+<td title='testCases.Login_func_test.testInvalidLoginFunc()'><b>testInvalidLoginFunc</b><br>Test class: testCases.Login_func_test<br>Parameters: tony123@gmail.com, Ranees@12345, User does not exists</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browse&apos; is required by BeforeTest on method launch_Browser but has not been marked @Optional or defined
+in C:\Selenium\VMTrackers_GPS_Application-Mvn_Projects\testng.xml
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1596751932", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1596751932'><pre>org.testng.TestNGException: 
+Parameter &apos;browse&apos; is required by BeforeTest on method launch_Browser but has not been marked @Optional or defined
+in C:\Selenium\VMTrackers_GPS_Application-Mvn_Projects\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:264)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:690)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:644)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+</pre></div></td>
+<td>0</td>
+<td>testCases.Login_func_test@59309333</td></tr>
+<tr>
+<td title='testCases.Login_func_test.testInvalidLoginFunc()'><b>testInvalidLoginFunc</b><br>Test class: testCases.Login_func_test<br>Parameters: tonyboniee@gmail.com, Rn@!@#$%, You have entered Invalid Password</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browse&apos; is required by BeforeTest on method launch_Browser but has not been marked @Optional or defined
+in C:\Selenium\VMTrackers_GPS_Application-Mvn_Projects\testng.xml
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2027672588", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2027672588'><pre>org.testng.TestNGException: 
+Parameter &apos;browse&apos; is required by BeforeTest on method launch_Browser but has not been marked @Optional or defined
+in C:\Selenium\VMTrackers_GPS_Application-Mvn_Projects\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:264)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:690)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:644)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+</pre></div></td>
+<td>0</td>
+<td>testCases.Login_func_test@59309333</td></tr>
+<tr>
+<td title='testCases.Login_func_test.testInvalidLoginFunc()'><b>testInvalidLoginFunc</b><br>Test class: testCases.Login_func_test<br>Parameters: , Ranees@12345, Please Enter Valid Email</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browse&apos; is required by BeforeTest on method launch_Browser but has not been marked @Optional or defined
+in C:\Selenium\VMTrackers_GPS_Application-Mvn_Projects\testng.xml
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace486051008", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace486051008'><pre>org.testng.TestNGException: 
+Parameter &apos;browse&apos; is required by BeforeTest on method launch_Browser but has not been marked @Optional or defined
+in C:\Selenium\VMTrackers_GPS_Application-Mvn_Projects\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:264)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:690)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:644)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+</pre></div></td>
+<td>0</td>
+<td>testCases.Login_func_test@59309333</td></tr>
+<tr>
+<td title='testCases.Login_func_test.testValidLoginLogoutFunc()'><b>testValidLoginLogoutFunc</b><br>Test class: testCases.Login_func_test<br>Parameters: tonyboniee@gmail.com, Ranees@12345, Logged In Successfully</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browse&apos; is required by BeforeTest on method launch_Browser but has not been marked @Optional or defined
+in C:\Selenium\VMTrackers_GPS_Application-Mvn_Projects\testng.xml
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2146164978", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2146164978'><pre>org.testng.TestNGException: 
+Parameter &apos;browse&apos; is required by BeforeTest on method launch_Browser but has not been marked @Optional or defined
+in C:\Selenium\VMTrackers_GPS_Application-Mvn_Projects\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:264)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:690)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:644)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+</pre></div></td>
+<td>0</td>
+<td>testCases.Login_func_test@59309333</td></tr>
+<tr>
+<td title='testCases.Dashboard_func_test.test_dashboardfunc_profilenameverify()'><b>test_dashboardfunc_profilenameverify</b><br>Test class: testCases.Dashboard_func_test</td>
+<td><div><pre>java.lang.Throwable: Method Dashboard_func_test.test_dashboardfunc_profilenameverify(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:testCases.Dashboard_func_test@2a798d51] depends on not successfully finished methods in group &quot;login&quot;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+... Removed 8 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace557791014", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace557791014'><pre>java.lang.Throwable: Method Dashboard_func_test.test_dashboardfunc_profilenameverify(java.lang.String,java.lang.String,java.lang.String)[pri:1, instance:testCases.Dashboard_func_test@2a798d51] depends on not successfully finished methods in group &quot;login&quot;
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+</pre></div></td>
+<td>0</td>
+<td>testCases.Dashboard_func_test@2a798d51</td></tr>
+<tr>
+<td title='testCases.Dashboard_func_test.test_dashboard_livetrackingverify()'><b>test_dashboard_livetrackingverify</b><br>Test class: testCases.Dashboard_func_test</td>
+<td><div><pre>java.lang.Throwable: Method Dashboard_func_test.test_dashboard_livetrackingverify()[pri:2, instance:testCases.Dashboard_func_test@2a798d51] depends on not successfully finished methods in group &quot;login&quot;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+... Removed 8 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace737039831", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace737039831'><pre>java.lang.Throwable: Method Dashboard_func_test.test_dashboard_livetrackingverify()[pri:2, instance:testCases.Dashboard_func_test@2a798d51] depends on not successfully finished methods in group &quot;login&quot;
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+</pre></div></td>
+<td>0</td>
+<td>testCases.Dashboard_func_test@2a798d51</td></tr>
+<tr>
+<td title='testCases.Login_func_test.testInvalidLoginFunc()'><b>testInvalidLoginFunc</b><br>Test class: testCases.Login_func_test<br>Parameters: tonyboniee@gmail.com, Raneessu@123456, You have entered Invalid Password</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browse&apos; is required by BeforeTest on method launch_Browser but has not been marked @Optional or defined
+in C:\Selenium\VMTrackers_GPS_Application-Mvn_Projects\testng.xml
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1496475656", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1496475656'><pre>org.testng.TestNGException: 
+Parameter &apos;browse&apos; is required by BeforeTest on method launch_Browser but has not been marked @Optional or defined
+in C:\Selenium\VMTrackers_GPS_Application-Mvn_Projects\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:264)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:690)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:644)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+</pre></div></td>
+<td>0</td>
+<td>testCases.Login_func_test@59309333</td></tr>
+<tr>
+<td title='testCases.Login_func_test.testInvalidLoginFunc()'><b>testInvalidLoginFunc</b><br>Test class: testCases.Login_func_test<br>Parameters: tonybonies@yahoo.com, Ranees@$1234, User does not exists</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browse&apos; is required by BeforeTest on method launch_Browser but has not been marked @Optional or defined
+in C:\Selenium\VMTrackers_GPS_Application-Mvn_Projects\testng.xml
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace213998942", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace213998942'><pre>org.testng.TestNGException: 
+Parameter &apos;browse&apos; is required by BeforeTest on method launch_Browser but has not been marked @Optional or defined
+in C:\Selenium\VMTrackers_GPS_Application-Mvn_Projects\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:264)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:690)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:644)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+</pre></div></td>
+<td>0</td>
+<td>testCases.Login_func_test@59309333</td></tr>
+<tr>
+<td title='testCases.Login_func_test.testInvalidLoginFunc()'><b>testInvalidLoginFunc</b><br>Test class: testCases.Login_func_test<br>Parameters: tonyboniee@gmail.com, Ranees12345, You have entered Invalid Password</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;browse&apos; is required by BeforeTest on method launch_Browser but has not been marked @Optional or defined
+in C:\Selenium\VMTrackers_GPS_Application-Mvn_Projects\testng.xml
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+... Removed 11 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace695494123", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace695494123'><pre>org.testng.TestNGException: 
+Parameter &apos;browse&apos; is required by BeforeTest on method launch_Browser but has not been marked @Optional or defined
+in C:\Selenium\VMTrackers_GPS_Application-Mvn_Projects\testng.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:264)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:690)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:655)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:644)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+</pre></div></td>
+<td>0</td>
+<td>testCases.Login_func_test@59309333</td></tr>
 </table><p>
 </body>
 </html>

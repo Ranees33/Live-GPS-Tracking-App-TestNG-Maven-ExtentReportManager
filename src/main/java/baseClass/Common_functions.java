@@ -2,6 +2,7 @@ package baseClass;
 
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.net.URL;
 import java.time.Duration;
 import java.util.HashMap;
 import java.util.Map;
@@ -18,6 +19,9 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
+import org.openqa.selenium.remote.RemoteWebDriver;
+
 
 import extentReports.ExtentReportManager;
 
@@ -28,6 +32,8 @@ public class Common_functions {
 	// Replace static WebDriver with ThreadLocal<WebDriver>
     private static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
 	public static Properties properties = null;
+	
+	private static final String BROWSERSTACK_URL = "https://raneesm_VPIrbk:EQNBYfCsyYiHyKa2LyGs@hub-cloud.browserstack.com/wd/hub";
 	
 	public Properties loadPropertyFile() throws IOException {
 
@@ -45,10 +51,11 @@ public class Common_functions {
     }
 	
 	@BeforeTest(alwaysRun = true)
-	public void launch_Browser(ITestContext context) throws IOException {
+	@Parameters({"browser"})
+	public void launch_Browser(ITestContext context, String browser) throws IOException {
 		
 		loadPropertyFile();
-		String browser = properties.getProperty("browser");
+//		String browsers = properties.getProperty("browser");
 		final String loginpage_url = properties.getProperty("test_Url");
 //		final String loginpage_url2 = properties.getProperty("test_Url2");
 		
@@ -63,21 +70,45 @@ public class Common_functions {
 			
 			ChromeOptions options = new ChromeOptions();
 			options.setExperimentalOption("prefs", prefs);
+			
+			// W3C-compliant BrowserStack capabilities
+			options.setCapability("browserstack:options", Map.of(
+					"os", "Windows",
+				    "osVersion", "11",
+				    "projectName", "VMTrackers GPS Application Test",
+				    "buildName", "Page Modules Validation",
+				    "sessionName", "Chrome Test"
+				 // "local", "true" // Uncomment for internal apps
+				));
+			
 			options.addArguments("disable-notifications");
 			options.addArguments("--disable-save-password-bubble"); // Disables the "Save Password" prompt
 			options.addArguments("--remote-allow-origins=*");
 			// Set preferences to disable the infobar 'Browser controlled by automated tool'
 			options.setExperimentalOption("excludeSwitches", new String[]{"enable-automation"});
-			driver.set(new ChromeDriver(options));
+//			driver.set(new ChromeDriver(options));
+            driver.set(new RemoteWebDriver(new URL(BROWSERSTACK_URL), options));
 			
 		} else if (browser.equalsIgnoreCase("firefox")) {
 			// Set up GeckoDriver dynamically using WebDriver Manager
 			WebDriverManager.firefoxdriver().setup();
 			FirefoxOptions options = new FirefoxOptions();
+			
+			// W3C-compliant BrowserStack capabilities
+			options.setCapability("browserstack:options", Map.of(
+					"os", "Windows",
+				    "osVersion", "11",
+				    "projectName", "VMTrackers GPS Application Test",
+				    "buildName", "Page Modules Validation",
+				    "sessionName", "Firefox Test"
+				 // "local", "true" // Uncomment for internal apps
+				));
+			
 			// Set preferences to disable the infobar
 	        options.addPreference("dom.webdriver.enabled", false);
 	        options.addPreference("useAutomationExtension", false);
-			driver.set(new FirefoxDriver(options));
+//			driver.set(new FirefoxDriver(options));
+			driver.set(new RemoteWebDriver(new URL(BROWSERSTACK_URL), options));
 		}
 		getDriver().manage().window().maximize();
 		getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
