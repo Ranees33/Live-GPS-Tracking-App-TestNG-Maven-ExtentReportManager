@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">VM Trackers GPS Application Test Execution Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Jul 8, 2025 08:15:20 pm</span></a>
+<a href="#"><span class="badge badge-primary">Jul 21, 2025 08:03:00 am</span></a>
 </li>
 </ul>
 </div>
@@ -45,6 +45,16 @@
 <li class="nav-item dropdown" onclick="toggleView('test-view')">
 <a id="nav-test" class="dropdown-toggle" href="#">
 <span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('author-view')">
+<a id="nav-author" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-user"></i></span>
 </a>
 </li>
 <li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
@@ -66,13 +76,1781 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i></a>
+<ul id="author-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">Ranees</a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">FunctionalTesting</a><a class="dropdown-item" href="#">Smoke&FunctionalTesting</a><a class="dropdown-item" href="#">RegressionTesting</a>
 </ul>
 </li>
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author="Ranees"
+          tag="RegressionTesting"
+          device="">
+          <div class="test-detail">
+            <p class="name">Login Functionality Test Method initiated (Positive Scenarios)</p>
+            <p class="text-sm">
+              <span>8:03:12 am</span> / <span>00:00:18:140</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Login Functionality Test Method initiated (Positive Scenarios)</h5>
+<span class='badge badge-success'>07.21.2025 8:03:12 am</span>
+<span class='badge badge-danger'>07.21.2025 8:03:30 am</span>
+<span class='badge badge-default'>00:00:18:140</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Ranees</span>
+<span class="badge badge-pill badge-default">RegressionTesting</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:03:12 am</td>
+        <td>
+          Navigated to tracker.vmmaps.com
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:03:23 am</td>
+        <td>
+          Users enter the email and password with valid data
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:03:23 am</td>
+        <td>
+          User successfully logged in
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>8:03:24 am</td>
+        <td>
+          Expected Results found. Validation passed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:03:30 am</td>
+        <td>
+          'Login' and 'Logout' Test Method Passed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:03:30 am</td>
+        <td>
+          'Login' and 'Logout' Test Method Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="2"
+          author="Ranees"
+          tag="RegressionTesting"
+          device="">
+          <div class="test-detail">
+            <p class="name">Login Functionality Test Method initiated (Negative Scenarios)</p>
+            <p class="text-sm">
+              <span>8:03:30 am</span> / <span>00:00:02:562</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Login Functionality Test Method initiated (Negative Scenarios)</h5>
+<span class='badge badge-success'>07.21.2025 8:03:30 am</span>
+<span class='badge badge-danger'>07.21.2025 8:03:33 am</span>
+<span class='badge badge-default'>00:00:02:562</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Ranees</span>
+<span class="badge badge-pill badge-default">RegressionTesting</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:03:32 am</td>
+        <td>
+          Users enter the email and password with invalid data
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>8:03:33 am</td>
+        <td>
+          Expected Results found. Validation passed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:03:33 am</td>
+        <td>
+          All 'Login' Test Method with invalid test data are Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="3"
+          author="Ranees"
+          tag="RegressionTesting"
+          device="">
+          <div class="test-detail">
+            <p class="name">Login Functionality Test Method initiated (Positive Scenarios)</p>
+            <p class="text-sm">
+              <span>8:03:31 am</span> / <span>00:00:09:703</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Login Functionality Test Method initiated (Positive Scenarios)</h5>
+<span class='badge badge-success'>07.21.2025 8:03:31 am</span>
+<span class='badge badge-danger'>07.21.2025 8:03:41 am</span>
+<span class='badge badge-default'>00:00:09:703</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Ranees</span>
+<span class="badge badge-pill badge-default">RegressionTesting</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:03:31 am</td>
+        <td>
+          Navigated to tracker.vmmaps.com
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:03:38 am</td>
+        <td>
+          Users enter the email and password with valid data
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:03:39 am</td>
+        <td>
+          User successfully logged in
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>8:03:40 am</td>
+        <td>
+          Expected Results found. Validation passed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:03:41 am</td>
+        <td>
+          'Login' and 'Logout' Test Method Passed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:03:41 am</td>
+        <td>
+          'Login' and 'Logout' Test Method Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="4"
+          author="Ranees"
+          tag="RegressionTesting"
+          device="">
+          <div class="test-detail">
+            <p class="name">Login Functionality Test Method initiated (Negative Scenarios)</p>
+            <p class="text-sm">
+              <span>8:03:33 am</span> / <span>00:00:03:146</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Login Functionality Test Method initiated (Negative Scenarios)</h5>
+<span class='badge badge-success'>07.21.2025 8:03:33 am</span>
+<span class='badge badge-danger'>07.21.2025 8:03:36 am</span>
+<span class='badge badge-default'>00:00:03:146</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Ranees</span>
+<span class="badge badge-pill badge-default">RegressionTesting</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:03:35 am</td>
+        <td>
+          Users enter the email and password with invalid data
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>8:03:36 am</td>
+        <td>
+          Expected Results found. Validation passed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:03:36 am</td>
+        <td>
+          All 'Login' Test Method with invalid test data are Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="5"
+          author="Ranees"
+          tag="RegressionTesting"
+          device="">
+          <div class="test-detail">
+            <p class="name">Login Functionality Test Method initiated (Negative Scenarios)</p>
+            <p class="text-sm">
+              <span>8:03:36 am</span> / <span>00:00:02:186</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Login Functionality Test Method initiated (Negative Scenarios)</h5>
+<span class='badge badge-success'>07.21.2025 8:03:36 am</span>
+<span class='badge badge-danger'>07.21.2025 8:03:38 am</span>
+<span class='badge badge-default'>00:00:02:186</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Ranees</span>
+<span class="badge badge-pill badge-default">RegressionTesting</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:03:37 am</td>
+        <td>
+          Users enter the email and password with invalid data
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>8:03:38 am</td>
+        <td>
+          Expected Results found. Validation passed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:03:38 am</td>
+        <td>
+          All 'Login' Test Method with invalid test data are Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="6"
+          author="Ranees"
+          tag="RegressionTesting"
+          device="">
+          <div class="test-detail">
+            <p class="name">Login Functionality Test Method initiated (Negative Scenarios)</p>
+            <p class="text-sm">
+              <span>8:03:38 am</span> / <span>00:00:02:202</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Login Functionality Test Method initiated (Negative Scenarios)</h5>
+<span class='badge badge-success'>07.21.2025 8:03:38 am</span>
+<span class='badge badge-danger'>07.21.2025 8:03:40 am</span>
+<span class='badge badge-default'>00:00:02:202</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Ranees</span>
+<span class="badge badge-pill badge-default">RegressionTesting</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:03:40 am</td>
+        <td>
+          Users enter the email and password with invalid data
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>8:03:40 am</td>
+        <td>
+          Expected Results found. Validation passed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:03:40 am</td>
+        <td>
+          All 'Login' Test Method with invalid test data are Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="7"
+          author="Ranees"
+          tag="RegressionTesting"
+          device="">
+          <div class="test-detail">
+            <p class="name">Login Functionality Test Method initiated (Negative Scenarios)</p>
+            <p class="text-sm">
+              <span>8:03:40 am</span> / <span>00:00:02:185</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Login Functionality Test Method initiated (Negative Scenarios)</h5>
+<span class='badge badge-success'>07.21.2025 8:03:40 am</span>
+<span class='badge badge-danger'>07.21.2025 8:03:42 am</span>
+<span class='badge badge-default'>00:00:02:185</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Ranees</span>
+<span class="badge badge-pill badge-default">RegressionTesting</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:03:42 am</td>
+        <td>
+          Users enter the email and password with invalid data
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>8:03:42 am</td>
+        <td>
+          Expected Results found. Validation passed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:03:42 am</td>
+        <td>
+          All 'Login' Test Method with invalid test data are Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="8"
+          author="Ranees"
+          tag="RegressionTesting"
+          device="">
+          <div class="test-detail">
+            <p class="name">Login Functionality Test Method initiated (Negative Scenarios)</p>
+            <p class="text-sm">
+              <span>8:03:41 am</span> / <span>00:00:04:730</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Login Functionality Test Method initiated (Negative Scenarios)</h5>
+<span class='badge badge-success'>07.21.2025 8:03:41 am</span>
+<span class='badge badge-danger'>07.21.2025 8:03:46 am</span>
+<span class='badge badge-default'>00:00:04:730</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=8</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Ranees</span>
+<span class="badge badge-pill badge-default">RegressionTesting</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:03:45 am</td>
+        <td>
+          Users enter the email and password with invalid data
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>8:03:46 am</td>
+        <td>
+          Expected Results found. Validation passed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:03:46 am</td>
+        <td>
+          All 'Login' Test Method with invalid test data are Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="9"
+          author="Ranees"
+          tag="RegressionTesting"
+          device="">
+          <div class="test-detail">
+            <p class="name">Login Functionality Test Method initiated (Negative Scenarios)</p>
+            <p class="text-sm">
+              <span>8:03:42 am</span> / <span>00:00:02:464</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Login Functionality Test Method initiated (Negative Scenarios)</h5>
+<span class='badge badge-success'>07.21.2025 8:03:42 am</span>
+<span class='badge badge-danger'>07.21.2025 8:03:45 am</span>
+<span class='badge badge-default'>00:00:02:464</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=9</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Ranees</span>
+<span class="badge badge-pill badge-default">RegressionTesting</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:03:44 am</td>
+        <td>
+          Users enter the email and password with invalid data
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>8:03:45 am</td>
+        <td>
+          Expected Results found. Validation passed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:03:45 am</td>
+        <td>
+          All 'Login' Test Method with invalid test data are Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="10"
+          author="Ranees"
+          tag="RegressionTesting"
+          device="">
+          <div class="test-detail">
+            <p class="name">Login Functionality Test Method initiated (Negative Scenarios)</p>
+            <p class="text-sm">
+              <span>8:03:45 am</span> / <span>00:00:02:342</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Login Functionality Test Method initiated (Negative Scenarios)</h5>
+<span class='badge badge-success'>07.21.2025 8:03:45 am</span>
+<span class='badge badge-danger'>07.21.2025 8:03:47 am</span>
+<span class='badge badge-default'>00:00:02:342</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=10</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Ranees</span>
+<span class="badge badge-pill badge-default">RegressionTesting</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:03:46 am</td>
+        <td>
+          Users enter the email and password with invalid data
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>8:03:47 am</td>
+        <td>
+          Expected Results found. Validation passed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:03:47 am</td>
+        <td>
+          All 'Login' Test Method with invalid test data are Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="11"
+          author="Ranees"
+          tag="RegressionTesting"
+          device="">
+          <div class="test-detail">
+            <p class="name">Login Functionality Test Method initiated (Negative Scenarios)</p>
+            <p class="text-sm">
+              <span>8:03:46 am</span> / <span>00:00:04:504</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Login Functionality Test Method initiated (Negative Scenarios)</h5>
+<span class='badge badge-success'>07.21.2025 8:03:46 am</span>
+<span class='badge badge-danger'>07.21.2025 8:03:50 am</span>
+<span class='badge badge-default'>00:00:04:504</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=11</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Ranees</span>
+<span class="badge badge-pill badge-default">RegressionTesting</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:03:50 am</td>
+        <td>
+          Users enter the email and password with invalid data
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>8:03:50 am</td>
+        <td>
+          Expected Results found. Validation passed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:03:50 am</td>
+        <td>
+          All 'Login' Test Method with invalid test data are Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="12"
+          author="Ranees"
+          tag="RegressionTesting"
+          device="">
+          <div class="test-detail">
+            <p class="name">Login Functionality Test Method initiated (Negative Scenarios)</p>
+            <p class="text-sm">
+              <span>8:03:47 am</span> / <span>00:00:02:113</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Login Functionality Test Method initiated (Negative Scenarios)</h5>
+<span class='badge badge-success'>07.21.2025 8:03:47 am</span>
+<span class='badge badge-danger'>07.21.2025 8:03:49 am</span>
+<span class='badge badge-default'>00:00:02:113</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=12</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Ranees</span>
+<span class="badge badge-pill badge-default">RegressionTesting</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:03:49 am</td>
+        <td>
+          Users enter the email and password with invalid data
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>8:03:49 am</td>
+        <td>
+          Expected Results found. Validation passed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:03:49 am</td>
+        <td>
+          All 'Login' Test Method with invalid test data are Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="13"
+          author="Ranees"
+          tag="RegressionTesting"
+          device="">
+          <div class="test-detail">
+            <p class="name">Login Functionality Test Method initiated (Negative Scenarios)</p>
+            <p class="text-sm">
+              <span>8:03:49 am</span> / <span>00:00:02:080</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Login Functionality Test Method initiated (Negative Scenarios)</h5>
+<span class='badge badge-success'>07.21.2025 8:03:49 am</span>
+<span class='badge badge-danger'>07.21.2025 8:03:51 am</span>
+<span class='badge badge-default'>00:00:02:080</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=13</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Ranees</span>
+<span class="badge badge-pill badge-default">RegressionTesting</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:03:51 am</td>
+        <td>
+          Users enter the email and password with invalid data
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>8:03:51 am</td>
+        <td>
+          Expected Results found. Validation passed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:03:51 am</td>
+        <td>
+          All 'Login' Test Method with invalid test data are Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="14"
+          author="Ranees"
+          tag="RegressionTesting"
+          device="">
+          <div class="test-detail">
+            <p class="name">Login Functionality Test Method initiated (Negative Scenarios)</p>
+            <p class="text-sm">
+              <span>8:03:50 am</span> / <span>00:00:03:795</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Login Functionality Test Method initiated (Negative Scenarios)</h5>
+<span class='badge badge-success'>07.21.2025 8:03:50 am</span>
+<span class='badge badge-danger'>07.21.2025 8:03:54 am</span>
+<span class='badge badge-default'>00:00:03:795</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=14</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Ranees</span>
+<span class="badge badge-pill badge-default">RegressionTesting</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:03:53 am</td>
+        <td>
+          Users enter the email and password with invalid data
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>8:03:54 am</td>
+        <td>
+          Expected Results found. Validation passed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:03:54 am</td>
+        <td>
+          All 'Login' Test Method with invalid test data are Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="15"
+          author="Ranees"
+          tag="RegressionTesting"
+          device="">
+          <div class="test-detail">
+            <p class="name">Login Functionality Test Method initiated (Negative Scenarios)</p>
+            <p class="text-sm">
+              <span>8:03:51 am</span> / <span>00:00:02:117</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Login Functionality Test Method initiated (Negative Scenarios)</h5>
+<span class='badge badge-success'>07.21.2025 8:03:51 am</span>
+<span class='badge badge-danger'>07.21.2025 8:03:53 am</span>
+<span class='badge badge-default'>00:00:02:117</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=15</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Ranees</span>
+<span class="badge badge-pill badge-default">RegressionTesting</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:03:53 am</td>
+        <td>
+          Users enter the email and password with invalid data
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>8:03:53 am</td>
+        <td>
+          Expected Results found. Validation passed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:03:53 am</td>
+        <td>
+          All 'Login' Test Method with invalid test data are Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="16"
+          author="Ranees"
+          tag="FunctionalTesting"
+          device="">
+          <div class="test-detail">
+            <p class="name">Dashboard Page User Profile Name Validation</p>
+            <p class="text-sm">
+              <span>8:03:54 am</span> / <span>00:00:02:500</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Dashboard Page User Profile Name Validation</h5>
+<span class='badge badge-success'>07.21.2025 8:03:54 am</span>
+<span class='badge badge-danger'>07.21.2025 8:03:56 am</span>
+<span class='badge badge-default'>00:00:02:500</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=16</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Ranees</span>
+<span class="badge badge-pill badge-default">FunctionalTesting</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:03:55 am</td>
+        <td>
+          Users enter the email and password with valid data
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>8:03:56 am</td>
+        <td>
+          Profile name contains 'ranees': arkranees
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:03:56 am</td>
+        <td>
+          Dashboard Profile Name Validation Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="17"
+          author="Ranees"
+          tag="RegressionTesting"
+          device="">
+          <div class="test-detail">
+            <p class="name">Login Functionality Test Method initiated (Negative Scenarios)</p>
+            <p class="text-sm">
+              <span>8:03:54 am</span> / <span>00:00:03:885</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Login Functionality Test Method initiated (Negative Scenarios)</h5>
+<span class='badge badge-success'>07.21.2025 8:03:54 am</span>
+<span class='badge badge-danger'>07.21.2025 8:03:58 am</span>
+<span class='badge badge-default'>00:00:03:885</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=17</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Ranees</span>
+<span class="badge badge-pill badge-default">RegressionTesting</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:03:57 am</td>
+        <td>
+          Users enter the email and password with invalid data
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>8:03:58 am</td>
+        <td>
+          Expected Results found. Validation passed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:03:58 am</td>
+        <td>
+          All 'Login' Test Method with invalid test data are Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="18"
+          author="Ranees"
+          tag="FunctionalTesting"
+          device="">
+          <div class="test-detail">
+            <p class="name">Dashboard Live Tracking Status Visible Validation</p>
+            <p class="text-sm">
+              <span>8:03:56 am</span> / <span>00:00:05:519</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Dashboard Live Tracking Status Visible Validation</h5>
+<span class='badge badge-success'>07.21.2025 8:03:56 am</span>
+<span class='badge badge-danger'>07.21.2025 8:04:02 am</span>
+<span class='badge badge-default'>00:00:05:519</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=18</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Ranees</span>
+<span class="badge badge-pill badge-default">FunctionalTesting</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:04:01 am</td>
+        <td>
+          Navigate to the tracking page
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>8:04:02 am</td>
+        <td>
+          Live tracking status are equal: 0 Devices Total
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:04:02 am</td>
+        <td>
+          Dashboard Page Live Tracking Status Verification Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="19"
+          author="Ranees"
+          tag="RegressionTesting"
+          device="">
+          <div class="test-detail">
+            <p class="name">Login Functionality Test Method initiated (Negative Scenarios)</p>
+            <p class="text-sm">
+              <span>8:03:58 am</span> / <span>00:00:04:200</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Login Functionality Test Method initiated (Negative Scenarios)</h5>
+<span class='badge badge-success'>07.21.2025 8:03:58 am</span>
+<span class='badge badge-danger'>07.21.2025 8:04:02 am</span>
+<span class='badge badge-default'>00:00:04:200</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=19</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Ranees</span>
+<span class="badge badge-pill badge-default">RegressionTesting</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:04:01 am</td>
+        <td>
+          Users enter the email and password with invalid data
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>8:04:02 am</td>
+        <td>
+          Expected Results found. Validation passed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:04:02 am</td>
+        <td>
+          All 'Login' Test Method with invalid test data are Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="20"
+          author="Ranees"
+          tag="Smoke&FunctionalTesting"
+          device="">
+          <div class="test-detail">
+            <p class="name">Validating alert type functionality & the values in Alert Page</p>
+            <p class="text-sm">
+              <span>8:04:02 am</span> / <span>00:00:08:787</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Validating alert type functionality & the values in Alert Page</h5>
+<span class='badge badge-success'>07.21.2025 8:04:02 am</span>
+<span class='badge badge-danger'>07.21.2025 8:04:10 am</span>
+<span class='badge badge-default'>00:00:08:787</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=20</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Ranees</span>
+<span class="badge badge-pill badge-default">Smoke&FunctionalTesting</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>8:04:09 am</td>
+        <td>
+          Alert Type element is enabled on the webpage
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:04:10 am</td>
+        <td>
+          Alert Type Element Values: All
+Geo Fence
+Over Speed
+SOS
+Power Cut
+Hard Cornering
+Hard Acceleration
+Hard Braking
+Idle
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="21"
+          author="Ranees"
+          tag="RegressionTesting"
+          device="">
+          <div class="test-detail">
+            <p class="name">Login Functionality Test Method initiated (Negative Scenarios)</p>
+            <p class="text-sm">
+              <span>8:04:02 am</span> / <span>00:00:04:405</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Login Functionality Test Method initiated (Negative Scenarios)</h5>
+<span class='badge badge-success'>07.21.2025 8:04:02 am</span>
+<span class='badge badge-danger'>07.21.2025 8:04:07 am</span>
+<span class='badge badge-default'>00:00:04:405</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=21</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Ranees</span>
+<span class="badge badge-pill badge-default">RegressionTesting</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:04:06 am</td>
+        <td>
+          Users enter the email and password with invalid data
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>8:04:07 am</td>
+        <td>
+          Expected Results found. Validation passed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:04:07 am</td>
+        <td>
+          All 'Login' Test Method with invalid test data are Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="22"
+          author="Ranees"
+          tag="RegressionTesting"
+          device="">
+          <div class="test-detail">
+            <p class="name">Login Functionality Test Method initiated (Negative Scenarios)</p>
+            <p class="text-sm">
+              <span>8:04:07 am</span> / <span>00:00:03:990</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Login Functionality Test Method initiated (Negative Scenarios)</h5>
+<span class='badge badge-success'>07.21.2025 8:04:07 am</span>
+<span class='badge badge-danger'>07.21.2025 8:04:11 am</span>
+<span class='badge badge-default'>00:00:03:990</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=22</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Ranees</span>
+<span class="badge badge-pill badge-default">RegressionTesting</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:04:10 am</td>
+        <td>
+          Users enter the email and password with invalid data
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>8:04:11 am</td>
+        <td>
+          Expected Results found. Validation passed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:04:11 am</td>
+        <td>
+          All 'Login' Test Method with invalid test data are Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="23"
+          author="Ranees"
+          tag="Smoke&FunctionalTesting"
+          device="">
+          <div class="test-detail">
+            <p class="name">Validating select device functionality in Alert Page</p>
+            <p class="text-sm">
+              <span>8:04:10 am</span> / <span>00:00:01:018</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Validating select device functionality in Alert Page</h5>
+<span class='badge badge-success'>07.21.2025 8:04:10 am</span>
+<span class='badge badge-danger'>07.21.2025 8:04:11 am</span>
+<span class='badge badge-default'>00:00:01:018</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=23</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Ranees</span>
+<span class="badge badge-pill badge-default">Smoke&FunctionalTesting</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:04:11 am</td>
+        <td>
+          Select Device Element Values: 
+0
+
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:04:11 am</td>
+        <td>
+          Alert Page functionality test are Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="24"
+          author="Ranees"
+          tag="RegressionTesting"
+          device="">
+          <div class="test-detail">
+            <p class="name">Login Functionality Test Method initiated (Negative Scenarios)</p>
+            <p class="text-sm">
+              <span>8:04:11 am</span> / <span>00:00:04:291</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Login Functionality Test Method initiated (Negative Scenarios)</h5>
+<span class='badge badge-success'>07.21.2025 8:04:11 am</span>
+<span class='badge badge-danger'>07.21.2025 8:04:15 am</span>
+<span class='badge badge-default'>00:00:04:291</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=24</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Ranees</span>
+<span class="badge badge-pill badge-default">RegressionTesting</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:04:14 am</td>
+        <td>
+          Users enter the email and password with invalid data
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>8:04:15 am</td>
+        <td>
+          Expected Results found. Validation passed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:04:15 am</td>
+        <td>
+          All 'Login' Test Method with invalid test data are Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="25"
+          author="Ranees"
+          tag="RegressionTesting"
+          device="">
+          <div class="test-detail">
+            <p class="name">Login Functionality Test Method initiated (Negative Scenarios)</p>
+            <p class="text-sm">
+              <span>8:04:15 am</span> / <span>00:00:03:778</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Login Functionality Test Method initiated (Negative Scenarios)</h5>
+<span class='badge badge-success'>07.21.2025 8:04:15 am</span>
+<span class='badge badge-danger'>07.21.2025 8:04:19 am</span>
+<span class='badge badge-default'>00:00:03:778</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=25</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Ranees</span>
+<span class="badge badge-pill badge-default">RegressionTesting</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:04:18 am</td>
+        <td>
+          Users enter the email and password with invalid data
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>8:04:19 am</td>
+        <td>
+          Expected Results found. Validation passed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:04:19 am</td>
+        <td>
+          All 'Login' Test Method with invalid test data are Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="26"
+          author="Ranees"
+          tag="RegressionTesting"
+          device="">
+          <div class="test-detail">
+            <p class="name">Login Functionality Test Method initiated (Negative Scenarios)</p>
+            <p class="text-sm">
+              <span>8:04:19 am</span> / <span>00:00:04:104</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Login Functionality Test Method initiated (Negative Scenarios)</h5>
+<span class='badge badge-success'>07.21.2025 8:04:19 am</span>
+<span class='badge badge-danger'>07.21.2025 8:04:23 am</span>
+<span class='badge badge-default'>00:00:04:104</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=26</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Ranees</span>
+<span class="badge badge-pill badge-default">RegressionTesting</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:04:22 am</td>
+        <td>
+          Users enter the email and password with invalid data
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>8:04:23 am</td>
+        <td>
+          Expected Results found. Validation passed
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:04:23 am</td>
+        <td>
+          All 'Login' Test Method with invalid test data are Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="27"
+          author="Ranees"
+          tag="FunctionalTesting"
+          device="">
+          <div class="test-detail">
+            <p class="name">Dashboard Page User Profile Name Validation</p>
+            <p class="text-sm">
+              <span>8:04:23 am</span> / <span>00:00:03:330</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Dashboard Page User Profile Name Validation</h5>
+<span class='badge badge-success'>07.21.2025 8:04:23 am</span>
+<span class='badge badge-danger'>07.21.2025 8:04:26 am</span>
+<span class='badge badge-default'>00:00:03:330</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=27</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Ranees</span>
+<span class="badge badge-pill badge-default">FunctionalTesting</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:04:26 am</td>
+        <td>
+          Users enter the email and password with valid data
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>8:04:26 am</td>
+        <td>
+          Profile name contains 'ranees': arkranees
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:04:26 am</td>
+        <td>
+          Dashboard Profile Name Validation Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="28"
+          author="Ranees"
+          tag="FunctionalTesting"
+          device="">
+          <div class="test-detail">
+            <p class="name">Dashboard Live Tracking Status Visible Validation</p>
+            <p class="text-sm">
+              <span>8:04:26 am</span> / <span>00:00:01:479</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Dashboard Live Tracking Status Visible Validation</h5>
+<span class='badge badge-success'>07.21.2025 8:04:26 am</span>
+<span class='badge badge-danger'>07.21.2025 8:04:28 am</span>
+<span class='badge badge-default'>00:00:01:479</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=28</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Ranees</span>
+<span class="badge badge-pill badge-default">FunctionalTesting</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:04:28 am</td>
+        <td>
+          Navigate to the tracking page
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>8:04:28 am</td>
+        <td>
+          Live tracking status are equal: 0 Devices Total
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:04:28 am</td>
+        <td>
+          Dashboard Page Live Tracking Status Verification Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="29"
+          author="Ranees"
+          tag="FunctionalTesting"
+          device="">
+          <div class="test-detail">
+            <p class="name">GPS Device Page Elements Visible Verification</p>
+            <p class="text-sm">
+              <span>8:04:28 am</span> / <span>00:00:00:677</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">GPS Device Page Elements Visible Verification</h5>
+<span class='badge badge-success'>07.21.2025 8:04:28 am</span>
+<span class='badge badge-danger'>07.21.2025 8:04:29 am</span>
+<span class='badge badge-default'>00:00:00:677</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=29</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Ranees</span>
+<span class="badge badge-pill badge-default">FunctionalTesting</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:04:28 am</td>
+        <td>
+          Navigated to GPS device page
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:04:28 am</td>
+        <td>
+          Verify the button elements are visible in GPS Device Page
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>8:04:29 am</td>
+        <td>
+          Button is displayed on the webpage.
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:04:29 am</td>
+        <td>
+          GPS Device Page Elements Validation Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="30"
+          author="Ranees"
+          tag="FunctionalTesting"
+          device="">
+          <div class="test-detail">
+            <p class="name">GPS Device Page Pop up Window Page Elements Info Validation</p>
+            <p class="text-sm">
+              <span>8:04:29 am</span> / <span>00:00:01:139</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">GPS Device Page Pop up Window Page Elements Info Validation</h5>
+<span class='badge badge-success'>07.21.2025 8:04:29 am</span>
+<span class='badge badge-danger'>07.21.2025 8:04:30 am</span>
+<span class='badge badge-default'>00:00:01:139</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=30</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Ranees</span>
+<span class="badge badge-pill badge-default">FunctionalTesting</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:04:29 am</td>
+        <td>
+          Navigated to pop up window
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:04:29 am</td>
+        <td>
+          Checking elements info on Add Device Pop Up Window and print it in console
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>8:04:30 am</td>
+        <td>
+          GPS Add Device Pop Up Page Elements Info Validation Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
       </ul>
     </div>
   </div>
@@ -82,24 +1860,580 @@
 </div>
 <div class="test-content-detail"><div class="detail-body"></div></div>
 </div></div>
-<div class="container-fluid p-4 view dashboard-view">
+<div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">3</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>6</span>
+</span>
+<p class="name">FunctionalTesting</p>
+<p class="duration text-sm">6 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>FunctionalTesting</h4>
+<span status="pass" class='badge log pass-bg'>6 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:03:54 am</td>
+<td>
+<a href="#" class="linked" test-id='16' id='16'>Dashboard Page User Profile Name Validation</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:03:56 am</td>
+<td>
+<a href="#" class="linked" test-id='18' id='18'>Dashboard Live Tracking Status Visible Validation</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:04:23 am</td>
+<td>
+<a href="#" class="linked" test-id='27' id='27'>Dashboard Page User Profile Name Validation</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:04:26 am</td>
+<td>
+<a href="#" class="linked" test-id='28' id='28'>Dashboard Live Tracking Status Visible Validation</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:04:28 am</td>
+<td>
+<a href="#" class="linked" test-id='29' id='29'>GPS Device Page Elements Visible Verification</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:04:29 am</td>
+<td>
+<a href="#" class="linked" test-id='30' id='30'>GPS Device Page Pop up Window Page Elements Info Validation</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>2</span>
+</span>
+<p class="name">Smoke&FunctionalTesting</p>
+<p class="duration text-sm">2 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>Smoke&FunctionalTesting</h4>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:04:02 am</td>
+<td>
+<a href="#" class="linked" test-id='20' id='20'>Validating alert type functionality & the values in Alert Page</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:04:10 am</td>
+<td>
+<a href="#" class="linked" test-id='23' id='23'>Validating select device functionality in Alert Page</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>22</span>
+</span>
+<p class="name">RegressionTesting</p>
+<p class="duration text-sm">22 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>RegressionTesting</h4>
+<span status="pass" class='badge log pass-bg'>22 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:03:12 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='1'>Login Functionality Test Method initiated (Positive Scenarios)</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:03:30 am</td>
+<td>
+<a href="#" class="linked" test-id='2' id='2'>Login Functionality Test Method initiated (Negative Scenarios)</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:03:31 am</td>
+<td>
+<a href="#" class="linked" test-id='3' id='3'>Login Functionality Test Method initiated (Positive Scenarios)</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:03:33 am</td>
+<td>
+<a href="#" class="linked" test-id='4' id='4'>Login Functionality Test Method initiated (Negative Scenarios)</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:03:36 am</td>
+<td>
+<a href="#" class="linked" test-id='5' id='5'>Login Functionality Test Method initiated (Negative Scenarios)</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:03:38 am</td>
+<td>
+<a href="#" class="linked" test-id='6' id='6'>Login Functionality Test Method initiated (Negative Scenarios)</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:03:40 am</td>
+<td>
+<a href="#" class="linked" test-id='7' id='7'>Login Functionality Test Method initiated (Negative Scenarios)</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:03:41 am</td>
+<td>
+<a href="#" class="linked" test-id='8' id='8'>Login Functionality Test Method initiated (Negative Scenarios)</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:03:42 am</td>
+<td>
+<a href="#" class="linked" test-id='9' id='9'>Login Functionality Test Method initiated (Negative Scenarios)</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:03:45 am</td>
+<td>
+<a href="#" class="linked" test-id='10' id='10'>Login Functionality Test Method initiated (Negative Scenarios)</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:03:46 am</td>
+<td>
+<a href="#" class="linked" test-id='11' id='11'>Login Functionality Test Method initiated (Negative Scenarios)</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:03:47 am</td>
+<td>
+<a href="#" class="linked" test-id='12' id='12'>Login Functionality Test Method initiated (Negative Scenarios)</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:03:49 am</td>
+<td>
+<a href="#" class="linked" test-id='13' id='13'>Login Functionality Test Method initiated (Negative Scenarios)</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:03:50 am</td>
+<td>
+<a href="#" class="linked" test-id='14' id='14'>Login Functionality Test Method initiated (Negative Scenarios)</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:03:51 am</td>
+<td>
+<a href="#" class="linked" test-id='15' id='15'>Login Functionality Test Method initiated (Negative Scenarios)</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:03:54 am</td>
+<td>
+<a href="#" class="linked" test-id='17' id='17'>Login Functionality Test Method initiated (Negative Scenarios)</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:03:58 am</td>
+<td>
+<a href="#" class="linked" test-id='19' id='19'>Login Functionality Test Method initiated (Negative Scenarios)</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:04:02 am</td>
+<td>
+<a href="#" class="linked" test-id='21' id='21'>Login Functionality Test Method initiated (Negative Scenarios)</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:04:07 am</td>
+<td>
+<a href="#" class="linked" test-id='22' id='22'>Login Functionality Test Method initiated (Negative Scenarios)</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:04:11 am</td>
+<td>
+<a href="#" class="linked" test-id='24' id='24'>Login Functionality Test Method initiated (Negative Scenarios)</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:04:15 am</td>
+<td>
+<a href="#" class="linked" test-id='25' id='25'>Login Functionality Test Method initiated (Negative Scenarios)</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:04:19 am</td>
+<td>
+<a href="#" class="linked" test-id='26' id='26'>Login Functionality Test Method initiated (Negative Scenarios)</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view author-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Author</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>30</span>
+</span>
+<p class="name">Ranees</p>
+<p class="duration text-sm">30 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>Ranees</h4>
+<span status="pass" class='badge log pass-bg'>30 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:03:12 am</td>
+<td>
+<a href="#" class="linked" test-id='1' id='1'>Login Functionality Test Method initiated (Positive Scenarios)</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:03:30 am</td>
+<td>
+<a href="#" class="linked" test-id='2' id='2'>Login Functionality Test Method initiated (Negative Scenarios)</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:03:31 am</td>
+<td>
+<a href="#" class="linked" test-id='3' id='3'>Login Functionality Test Method initiated (Positive Scenarios)</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:03:33 am</td>
+<td>
+<a href="#" class="linked" test-id='4' id='4'>Login Functionality Test Method initiated (Negative Scenarios)</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:03:36 am</td>
+<td>
+<a href="#" class="linked" test-id='5' id='5'>Login Functionality Test Method initiated (Negative Scenarios)</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:03:38 am</td>
+<td>
+<a href="#" class="linked" test-id='6' id='6'>Login Functionality Test Method initiated (Negative Scenarios)</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:03:40 am</td>
+<td>
+<a href="#" class="linked" test-id='7' id='7'>Login Functionality Test Method initiated (Negative Scenarios)</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:03:41 am</td>
+<td>
+<a href="#" class="linked" test-id='8' id='8'>Login Functionality Test Method initiated (Negative Scenarios)</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:03:42 am</td>
+<td>
+<a href="#" class="linked" test-id='9' id='9'>Login Functionality Test Method initiated (Negative Scenarios)</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:03:45 am</td>
+<td>
+<a href="#" class="linked" test-id='10' id='10'>Login Functionality Test Method initiated (Negative Scenarios)</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:03:46 am</td>
+<td>
+<a href="#" class="linked" test-id='11' id='11'>Login Functionality Test Method initiated (Negative Scenarios)</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:03:47 am</td>
+<td>
+<a href="#" class="linked" test-id='12' id='12'>Login Functionality Test Method initiated (Negative Scenarios)</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:03:49 am</td>
+<td>
+<a href="#" class="linked" test-id='13' id='13'>Login Functionality Test Method initiated (Negative Scenarios)</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:03:50 am</td>
+<td>
+<a href="#" class="linked" test-id='14' id='14'>Login Functionality Test Method initiated (Negative Scenarios)</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:03:51 am</td>
+<td>
+<a href="#" class="linked" test-id='15' id='15'>Login Functionality Test Method initiated (Negative Scenarios)</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:03:54 am</td>
+<td>
+<a href="#" class="linked" test-id='16' id='16'>Dashboard Page User Profile Name Validation</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:03:54 am</td>
+<td>
+<a href="#" class="linked" test-id='17' id='17'>Login Functionality Test Method initiated (Negative Scenarios)</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:03:56 am</td>
+<td>
+<a href="#" class="linked" test-id='18' id='18'>Dashboard Live Tracking Status Visible Validation</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:03:58 am</td>
+<td>
+<a href="#" class="linked" test-id='19' id='19'>Login Functionality Test Method initiated (Negative Scenarios)</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:04:02 am</td>
+<td>
+<a href="#" class="linked" test-id='20' id='20'>Validating alert type functionality & the values in Alert Page</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:04:02 am</td>
+<td>
+<a href="#" class="linked" test-id='21' id='21'>Login Functionality Test Method initiated (Negative Scenarios)</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:04:07 am</td>
+<td>
+<a href="#" class="linked" test-id='22' id='22'>Login Functionality Test Method initiated (Negative Scenarios)</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:04:10 am</td>
+<td>
+<a href="#" class="linked" test-id='23' id='23'>Validating select device functionality in Alert Page</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:04:11 am</td>
+<td>
+<a href="#" class="linked" test-id='24' id='24'>Login Functionality Test Method initiated (Negative Scenarios)</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:04:15 am</td>
+<td>
+<a href="#" class="linked" test-id='25' id='25'>Login Functionality Test Method initiated (Negative Scenarios)</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:04:19 am</td>
+<td>
+<a href="#" class="linked" test-id='26' id='26'>Login Functionality Test Method initiated (Negative Scenarios)</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:04:23 am</td>
+<td>
+<a href="#" class="linked" test-id='27' id='27'>Dashboard Page User Profile Name Validation</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:04:26 am</td>
+<td>
+<a href="#" class="linked" test-id='28' id='28'>Dashboard Live Tracking Status Visible Validation</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:04:28 am</td>
+<td>
+<a href="#" class="linked" test-id='29' id='29'>GPS Device Page Elements Visible Verification</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>08:04:29 am</td>
+<td>
+<a href="#" class="linked" test-id='30' id='30'>GPS Device Page Pop up Window Page Elements Info Validation</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
 <div class="row">
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Jul 8, 2025 08:15:20 pm</h3>
+<h3>Jul 21, 2025 08:03:00 am</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Jul 8, 2025 08:15:20 pm</h3>
+<h3>Jul 21, 2025 08:04:31 am</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Tests Passed</p>
-<h3>0</h3>
+<h3>30</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -121,13 +2455,33 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='0%'>
-<b>0</b> tests passed
+<div><small data-tooltip='100%'>
+<b>30</b> tests passed
 </small>
 </div>
 <div>
 <small data-tooltip='0%'><b>0</b> tests failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Log events</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='events-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='29%'><b>28</b> events passed</small></div>
+<div>
+<small data-tooltip='0%'><b>0</b> events failed,
+<b data-tooltip='%'>67</b> others
 </small>
 </div>
 </div>
@@ -143,23 +2497,67 @@
 </div></div>
 <script>
 var timeline = {
+"Login Functionality Test Method initiated (Positive Scenarios)":18.14,"Login Functionality Test Method initiated (Negative Scenarios)":2.562,"Login Functionality Test Method initiated (Positive Scenarios)":9.703,"Login Functionality Test Method initiated (Negative Scenarios)":3.146,"Login Functionality Test Method initiated (Negative Scenarios)":2.186,"Login Functionality Test Method initiated (Negative Scenarios)":2.202,"Login Functionality Test Method initiated (Negative Scenarios)":2.185,"Login Functionality Test Method initiated (Negative Scenarios)":4.73,"Login Functionality Test Method initiated (Negative Scenarios)":2.464,"Login Functionality Test Method initiated (Negative Scenarios)":2.342,"Login Functionality Test Method initiated (Negative Scenarios)":4.504,"Login Functionality Test Method initiated (Negative Scenarios)":2.113,"Login Functionality Test Method initiated (Negative Scenarios)":2.08,"Login Functionality Test Method initiated (Negative Scenarios)":3.795,"Login Functionality Test Method initiated (Negative Scenarios)":2.117,"Dashboard Page User Profile Name Validation":2.5,"Login Functionality Test Method initiated (Negative Scenarios)":3.885,"Dashboard Live Tracking Status Visible Validation":5.519,"Login Functionality Test Method initiated (Negative Scenarios)":4.2,"Validating alert type functionality & the values in Alert Page":8.787,"Login Functionality Test Method initiated (Negative Scenarios)":4.405,"Login Functionality Test Method initiated (Negative Scenarios)":3.99,"Validating select device functionality in Alert Page":1.018,"Login Functionality Test Method initiated (Negative Scenarios)":4.291,"Login Functionality Test Method initiated (Negative Scenarios)":3.778,"Login Functionality Test Method initiated (Negative Scenarios)":4.104,"Dashboard Page User Profile Name Validation":3.33,"Dashboard Live Tracking Status Visible Validation":1.479,"GPS Device Page Elements Visible Verification":0.677,"GPS Device Page Pop up Window Page Elements Info Validation":1.139
 };
 </script>
 <div class="row">
+<div class="col-lg-6 col-md-12 author-container">
+<div class="card">
+<div class="card-header"><p>Author</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead>
+<tbody>
+<tr>
+<td>Ranees</td>
+<td>30</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>FunctionalTesting</td>
+<td>6</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>Smoke&FunctionalTesting</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>RegressionTesting</td>
+<td>22</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
 <div class="col-lg-6 col-md-12 sysenv-container">
 <div class="card">
 <div class="card-header"><p>System/Environment</p></div>
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
 <tbody>
-<tr>
-<td>Environment</td>
-<td>QA</td>
-</tr>
-<tr>
-<td>Ranees</td>
-<td>Tester</td>
-</tr>
 <tr>
 <td>Environment</td>
 <td>QA</td>
@@ -177,7 +2575,7 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 0,
+passParent: 30,
 failParent: 0,
 warningParent: 0,
 skipParent: 0,
@@ -194,11 +2592,11 @@ warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
-passEvents: 0,
+passEvents: 28,
 failEvents: 0,
 warningEvents: 0,
 skipEvents: 0,
-infoEvents: 0
+infoEvents: 67
 };
 </script>        </div>
       </div>
