@@ -2,7 +2,6 @@ package baseClass;
 
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.net.URL;
 import java.time.Duration;
 import java.util.HashMap;
 import java.util.Map;
@@ -10,9 +9,11 @@ import java.util.Properties;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
-// import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-// import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.testng.ITestContext;
 import org.testng.annotations.AfterSuite;
@@ -20,8 +21,8 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
-import org.openqa.selenium.remote.RemoteWebDriver;
 
+import com.beust.jcommander.Parameter;
 
 import extentReports.ExtentReportManager;
 
@@ -32,8 +33,6 @@ public class Common_functions {
 	// Replace static WebDriver with ThreadLocal<WebDriver>
     private static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
 	public static Properties properties = null;
-	
-	private static final String BROWSERSTACK_URL = "https://raneesm_VPIrbk:EQNBYfCsyYiHyKa2LyGs@hub-cloud.browserstack.com/wd/hub";
 	
 	public Properties loadPropertyFile() throws IOException {
 
@@ -51,16 +50,16 @@ public class Common_functions {
     }
 	
 	@BeforeTest(alwaysRun = true)
-	@Parameters({"browser"})
+	@Parameters("browser")
 	public void launch_Browser(ITestContext context, String browser) throws IOException {
 		
 		loadPropertyFile();
-//		String browsers = properties.getProperty("browser");
+		// String browser = properties.getProperty("browser");
 		final String loginpage_url = properties.getProperty("test_Url");
 //		final String loginpage_url2 = properties.getProperty("test_Url2");
 		
-
-		if (browser.equalsIgnoreCase("chrome")) {
+		String testBrowser = browser;
+		if (testBrowser.equalsIgnoreCase("chrome")) {
 			// Set up ChromeDriver dynamically using WebDriver Manager
 			WebDriverManager.chromedriver().setup();
 			
@@ -70,46 +69,34 @@ public class Common_functions {
 			
 			ChromeOptions options = new ChromeOptions();
 			options.setExperimentalOption("prefs", prefs);
-			
-			// W3C-compliant BrowserStack capabilities
-			options.setCapability("browserstack:options", Map.of(
-					"os", "Windows",
-				    "osVersion", "11",
-				    "projectName", "VMTrackers GPS Application Test",
-				    "buildName", "Page Modules Validation",
-				    "sessionName", "Chrome Test"
-				 // "local", "true" // Uncomment for internal apps
-				));
-			
 			options.addArguments("disable-notifications");
 			options.addArguments("--disable-save-password-bubble"); // Disables the "Save Password" prompt
 			options.addArguments("--remote-allow-origins=*");
 			// Set preferences to disable the infobar 'Browser controlled by automated tool'
 			options.setExperimentalOption("excludeSwitches", new String[]{"enable-automation"});
-//			driver.set(new ChromeDriver(options));
-            driver.set(new RemoteWebDriver(new URL(BROWSERSTACK_URL), options));
+			driver.set(new ChromeDriver(options));
 			
-		} else if (browser.equalsIgnoreCase("firefox")) {
+		} else if (testBrowser.equalsIgnoreCase("firefox")) {
 			// Set up GeckoDriver dynamically using WebDriver Manager
 			WebDriverManager.firefoxdriver().setup();
 			FirefoxOptions options = new FirefoxOptions();
-			
-			// W3C-compliant BrowserStack capabilities
-			options.setCapability("browserstack:options", Map.of(
-					"os", "Windows",
-				    "osVersion", "11",
-				    "projectName", "VMTrackers GPS Application Test",
-				    "buildName", "Page Modules Validation",
-				    "sessionName", "Firefox Test"
-				 // "local", "true" // Uncomment for internal apps
-				));
-			
 			// Set preferences to disable the infobar
 	        options.addPreference("dom.webdriver.enabled", false);
 	        options.addPreference("useAutomationExtension", false);
-//			driver.set(new FirefoxDriver(options));
-			driver.set(new RemoteWebDriver(new URL(BROWSERSTACK_URL), options));
+			driver.set(new FirefoxDriver(options));
+			
+		} else if (testBrowser.equalsIgnoreCase("edge")) {
+			// Set up EdgeDriver dynamically using WebDriver Manager
+			// WebDriverManager.edgedriver().setup();
+			System.setProperty("webdriver.edge.driver", "C:\\edgedriver_win64\\msedgedriver.exe");
+			EdgeOptions options = new EdgeOptions();
+			// Set preferences to disable the infobar
+			options.addArguments("--remote-allow-origins=*");
+			options.setExperimentalOption("useAutomationExtension", false);
+			options.setExperimentalOption("excludeSwitches", new String[]{"enable-automation"});
+			driver.set(new EdgeDriver(options));
 		}
+		
 		getDriver().manage().window().maximize();
 		getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 		// Navigate to the base URL
@@ -136,7 +123,9 @@ public class Common_functions {
 	@AfterSuite(alwaysRun = true)
     public void teardownSuite() {
 		System.out.println("Reached after suite method.."); // Debug log
+		System.out.println("Test Completed");
         ExtentReportManager.flushReport();
     }
 	
 }
+
