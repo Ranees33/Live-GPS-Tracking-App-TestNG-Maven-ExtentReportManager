@@ -8,7 +8,7 @@
     </listeners>
 	
 	    <!-- Flow 1: Login → Dashboard → Alert -->
-	<test name="Vm Trackers GPS Application Test Flow 2">
+	<test name="Vm Trackers GPS Application Test Flow 1 'running in Chrome'">
 		<!-- <groups>
 			<run>
 				<include name="functional" />
@@ -16,7 +16,7 @@
 			</run>
 		</groups> -->
 
-        <parameter name="browser" value="chrome"/>
+       <parameter name="browser" value="chrome"/>
 		<classes>
 			<class name="testCases.Login_func_test" />
 			<class name="testCases.Dashboard_func_test" />
@@ -24,8 +24,42 @@
 		</classes>
 	</test>
 	
-	 <!-- Flow 1: Login → Dashboard → GPS Device -->
-	<test name="Vm Trackers GPS Application Test Flow 1">
+	 <!-- Flow 2: Login → Dashboard → GPS Device -->
+	<test name="Vm Trackers GPS Application Test Flow 2 'running in Chrome'">
+		<!-- <groups>
+			<run>
+				<include name="functional" />
+				<include name="smoke" />
+			</run>
+		</groups> -->
+        
+        <parameter name="browser" value="chrome"/>
+		<classes>
+			<class name="testCases.Login_func_test" />
+			<class name="testCases.Dashboard_func_test" />
+			<class name="testCases.GPS_device_test" />
+		</classes>
+	</test>
+	
+	<!-- Flow 1: Login → Dashboard → Alert -->
+	<test name="Vm Trackers GPS Application Test Flow 1 'running in Firefox'">
+		<!-- <groups>
+			<run>
+				<include name="functional" />
+				<include name="smoke" />
+			</run>
+		</groups> -->
+
+       <parameter name="browser" value="firefox"/>
+		<classes>
+			<class name="testCases.Login_func_test" />
+			<class name="testCases.Dashboard_func_test" />
+			<class name="testCases.Alert_func_test"/>
+		</classes>
+	</test>
+	
+	 <!-- Flow 2: Login → Dashboard → GPS Device -->
+	<test name="Vm Trackers GPS Application Test Flow 2 'running in Firefox'">
 		<!-- <groups>
 			<run>
 				<include name="functional" />
@@ -34,6 +68,40 @@
 		</groups> -->
         
         <parameter name="browser" value="firefox"/>
+		<classes>
+			<class name="testCases.Login_func_test" />
+			<class name="testCases.Dashboard_func_test" />
+			<class name="testCases.GPS_device_test" />
+		</classes>
+	</test>
+	
+	<!-- Flow 1: Login → Dashboard → Alert -->
+	<test name="Vm Trackers GPS Application Test Flow 1 'running in Edge'">
+		<!-- <groups>
+			<run>
+				<include name="functional" />
+				<include name="smoke" />
+			</run>
+		</groups> -->
+
+       <parameter name="browser" value="edge"/>
+		<classes>
+			<class name="testCases.Login_func_test" />
+			<class name="testCases.Dashboard_func_test" />
+			<class name="testCases.Alert_func_test"/>
+		</classes>
+	</test>
+	
+	 <!-- Flow 2: Login → Dashboard → GPS Device -->
+	<test name="Vm Trackers GPS Application Test Flow 2 'running in Edge'">
+		<!-- <groups>
+			<run>
+				<include name="functional" />
+				<include name="smoke" />
+			</run>
+		</groups> -->
+        
+        <parameter name="browser" value="edge"/>
 		<classes>
 			<class name="testCases.Login_func_test" />
 			<class name="testCases.Dashboard_func_test" />
