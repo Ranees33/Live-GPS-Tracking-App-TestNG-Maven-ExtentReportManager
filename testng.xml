@@ -106,7 +106,6 @@
 			<class name="testCases.Login_func_test" />
 			<class name="testCases.Dashboard_func_test" />
 			<class name="testCases.GPS_device_test" />
-			<class name = "" />
 		</classes>
 	</test>
 	
