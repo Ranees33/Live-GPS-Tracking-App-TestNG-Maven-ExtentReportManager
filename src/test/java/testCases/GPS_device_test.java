@@ -38,7 +38,7 @@ public class GPS_device_test extends Common_functions {
 		gpsdevice = new GPS_device_page(driver);
 		
 		// Navigate to the gps device page
-		test.info("Navigated to GPS device page");
+		test.info("Navigated to the GPS device page");
 		gpsdevice.navigategpsPage.click();
 		
 		// Check if the button is displayed and visible to users
