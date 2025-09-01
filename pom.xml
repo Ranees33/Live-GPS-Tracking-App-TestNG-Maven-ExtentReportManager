@@ -27,11 +27,19 @@
 				<version>3.5.1</version>
 				<configuration>
 					<suiteXmlFiles>
-						<suiteXmlFile>testng.xml</suiteXmlFile>
+						<suiteXmlFile>${surefire.suiteXmlFiles}</suiteXmlFile>
 					</suiteXmlFiles>
+					<!-- Override parallel execution for CI -->
+					<!-- <parallel>${parallel.mode}</parallel>
+					<threadCount>${thread.count}</threadCount> -->
+					<!-- Allow parameter overrides -->
+					<!-- <systemPropertyVariables>
+						<browser>${browser}</browser>
+						<groups>${groups}</groups>
+					</systemPropertyVariables> -->
 				</configuration>
 			</plugin>
-        </plugins>
+		</plugins>
     </build>
 
     <properties>
