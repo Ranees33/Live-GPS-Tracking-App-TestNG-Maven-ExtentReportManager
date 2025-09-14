@@ -54,7 +54,7 @@ public class Subscription_test {
 			Assert.fail("'Buy Now' button is not displayed");
 		}
 		
-		// Verify the Buy Now button that is clickable or not to users
+		// Verify the Buy Now button that is clickable to users or not
 		test.info("Verify the 'Buy Now' button is clickable to users");
 		
 		// boolean isBuyNowEnabled = subscriptionpage.premiumBuyNowButton.isEnabled();
@@ -63,7 +63,7 @@ public class Subscription_test {
 		if (isBuyNowEnabled) {
 			test.pass("'Buy Now' button is enabled on Subscription Page");
 			subscriptionpage.premiumBuyNowButton.click();
-			Thread.sleep(4000);
+			Assert.assertEquals(driver.getTitle(), "checkout");
 			test.pass("Buy Now button is clickable");
 			
 //			try {
